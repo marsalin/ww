@@ -587,6 +587,11 @@ MonoBehaviour:
   playedExhaleSound: 0
   playedBreathingSound: 0
   simpleSource: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
+  clickSound2: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
+  clickSound3: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
+  clickSound4: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
+  clickSound5: {fileID: 8300000, guid: 1e7a587164fcbef45b40536469e6c432, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

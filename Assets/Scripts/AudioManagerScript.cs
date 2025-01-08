@@ -20,8 +20,8 @@ public class AudioManagerScript : MonoBehaviour
     
     [Header("Simple")]
     public AudioSource simpleSource;
-
-   
+    public AudioClip clickSound, clickSound2, clickSound3, clickSound4, clickSound5;
+    
     
     void Awake()
     {
@@ -99,5 +99,24 @@ public class AudioManagerScript : MonoBehaviour
     {
         simpleSource.clip = simpleClip;
         simpleSource.Play();
+    }
+
+    public void PlaySound(int choice)
+    {
+        GameObject clickSoundObject = new GameObject("ClickSound");
+        AudioSource clickSource = clickSoundObject.AddComponent<AudioSource>();
+        if (choice == 1)
+            clickSource.clip = clickSound;
+        else if (choice == 2)
+            clickSource.clip = clickSound2;
+        else if (choice == 3)
+            clickSource.clip = clickSound3;
+        else if (choice == 4)
+            clickSource.clip = clickSound4;
+        else if (choice == 5)
+            clickSource.clip = clickSound5;
+        clickSource.Play();
+        Destroy(clickSoundObject, clickSound.length/clickSource.pitch);
+        DontDestroyOnLoad(clickSoundObject);
     }
 }

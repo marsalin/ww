@@ -4,6 +4,7 @@ using UnityEngine.Serialization;
 public class CameraScript : MonoBehaviour
 {
     public Transform cameraPos;
+    private Player player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

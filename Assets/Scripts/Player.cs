@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour
 
     [Header("Canvas")] public Camera mainCamera;
     public Slider staminaSlider;
-    public Text pressEText;
+    public TMP_Text pressEText;
     public GameObject vignette;
     public GameObject deathVignette;
     public Text deathText;
@@ -91,7 +92,8 @@ public class Player : MonoBehaviour
     public bool hasStopped;
 
     [Header("End")] public bool endGame;
-    
+    public GameObject deathScreenObject;
+    private MenuManager menuManager;
 
     /*
      * maze book 27
@@ -114,6 +116,7 @@ public class Player : MonoBehaviour
         vignette.SetActive(false);
         deathVignette.SetActive(false);
         deathText.enabled = false;
+        deathScreenObject.SetActive(false);
         AudioManagerScript.Instance.breathingSource.Play();
         lastPlayerRotation = transform.rotation.eulerAngles;
     }
@@ -196,7 +199,7 @@ public class Player : MonoBehaviour
 
         vertical -= Input.GetAxis("Mouse Y") * mouseSensitivity;
         vertical = Mathf.Clamp(vertical, -mouseRange, mouseRange);
-
+        
         mainCamera.transform.localRotation = Quaternion.Euler(vertical, 0, 0);
     }
 

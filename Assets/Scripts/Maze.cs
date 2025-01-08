@@ -48,6 +48,7 @@ public class Maze : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Additive);
     }
     void Start()
@@ -67,7 +68,6 @@ public class Maze : MonoBehaviour
         yield return PlayerPos();
         LoadingScreen.Instance.CloseLoadingScreen();
         player.GetComponent<Player>().enabled = true;
-        
     }
 
     public IEnumerator GenerateMazeFloor()
@@ -183,7 +183,7 @@ public class Maze : MonoBehaviour
         {
             for (int j = 0; j < GameManagerInstance.Instance.height; j++)
             {
-                Cell cell = cells[i, j];
+                Cell cell = cells[j, i];
                 Vector3 cellPos = new Vector3(j * prefabWidth, 0, i * prefabWidth);
                 
                 if (cell.neighbors[(int)EDirection.UP])

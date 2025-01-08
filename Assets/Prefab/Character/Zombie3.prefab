@@ -763,7 +763,8 @@ MonoBehaviour:
   agent: {fileID: 0}
   middleCellPos: {x: 0, y: 0, z: 0}
   enemyAnimator: {fileID: 5884077091816401275}
-  viewRange: 50
+  viewRange: 30
+  hearingRange: 15
   playerLayer:
     serializedVersion: 2
     m_Bits: 193
@@ -775,8 +776,8 @@ MonoBehaviour:
   timer: 2
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5
-  minDistance: 20
-  maxDistance: 50
+  minDistance: 25
+  maxDistance: 60
   isTargetable: 0
   endAnimation: 0
   playerFinished: 0
@@ -791,7 +792,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 0.8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

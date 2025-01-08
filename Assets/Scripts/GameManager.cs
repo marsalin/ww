@@ -10,14 +10,17 @@ public class GameManager : MonoBehaviour
     public GameObject settings;
     public Slider volumeSlider;
     [FormerlySerializedAs("endGame")] public GameObject escapeMenu;
-    private LoadingScreen loadingScreenScript;
+    public GameObject easyDescription, mediumDescription, hardDescription;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         settings.SetActive(false);
         escapeMenu.SetActive(false);
         play.SetActive(false);
-        
+        easyDescription.SetActive(false);
+        mediumDescription.SetActive(false);
+        hardDescription.SetActive(false);
         float savedVolume = PlayerPrefs.GetFloat("GameVolume", 0.5f);
         AudioListener.volume = savedVolume;
         if (volumeSlider != null) 
@@ -41,8 +44,17 @@ public class GameManager : MonoBehaviour
     public void PlayEasy()
     {
         GameManagerInstance.Instance.height = 15;
-        GameManagerInstance.Instance.width = 15;
+        GameManagerInstance.Instance.width = 12;
         SceneManager.LoadScene("Game");
+    }
+
+    public void HoverOverEasy()
+    {
+        easyDescription.SetActive(true);
+    }
+    public void HoverExitEasy()
+    {
+        easyDescription.SetActive(false);
     }
     public void PlayMedium()
     {
@@ -50,11 +62,31 @@ public class GameManager : MonoBehaviour
         GameManagerInstance.Instance.width = 20;
         SceneManager.LoadScene("Game");
     }
+
+    public void HoverOverMedium()
+    {
+        mediumDescription.SetActive(true);
+    }
+
+    public void HoverExitMedium()
+    {
+        mediumDescription.SetActive(false);
+    }
     public void PlayHard()
     {
         GameManagerInstance.Instance.height = 25;
         GameManagerInstance.Instance.width = 25;
         SceneManager.LoadScene("Game");
+    }
+
+    public void HoverOverHard()
+    {
+        hardDescription.SetActive(true);
+    }
+
+    public void HoverExitHard()
+    {
+        hardDescription.SetActive(false);
     }
     
     public void Settings()
@@ -91,13 +123,16 @@ public class GameManager : MonoBehaviour
             Default();
         }
     }
-
+    
     public void Default()
     {
         menue.SetActive(true);
         settings.SetActive(false);
         escapeMenu.SetActive(false);
         play.SetActive(false);
+        easyDescription.SetActive(false);
+        mediumDescription.SetActive(false);
+        hardDescription.SetActive(false);
     }
     public void QuitGame()
     {

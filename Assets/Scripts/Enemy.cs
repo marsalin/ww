@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public Vector3 middleCellPos;
     public Animator enemyAnimator;
     public float viewRange;
+    public float hearingRange;
     public LayerMask playerLayer;
     public bool playerFound;
     [FormerlySerializedAs("hitPlayer")] public bool hitPlayerAnimation;
@@ -53,6 +54,8 @@ public class Enemy : MonoBehaviour
         
         if (goMiddleCell)
             agent.destination = middleCellPos;
+        
+        Debug.Log(agent.destination);
     }
 
     private bool SnapPosition(Vector3 pos, float maxDistance, out Vector3 snappedPos)
@@ -93,7 +96,7 @@ public class Enemy : MonoBehaviour
             timer = 2f;
         }
         else if ((!playerFound && !playerFinished) && (AudioManagerScript.Instance.playedExhaleSound ||
-                                  AudioManagerScript.Instance.playedBreathingSound))
+                                  AudioManagerScript.Instance.playedBreathingSound) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange)
         {
             Vector3 snappedPos;
             if (SnapPosition(player.transform.position, snapDistance, out snappedPos))
@@ -167,8 +170,14 @@ public class Enemy : MonoBehaviour
     public void HitAnimationEnd(AnimationEvent animationEvent)
     {
         hitPlayer = false;
-        /*if (player.playerHealth == 0)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);*/
+        if (player.playerHealth == 0)
+        {
+            player.deathText.enabled = false;
+            player.deathScreenObject.SetActive(true);
+            player.enabled = false;
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void EndAnimation(AnimationEvent animationEvent)
