@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 132f15de5e3d75648af360905fefe33a
+timeCreated: 1533496770
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 125030
+  packageName: Soviet Television Electron 718
+  packageVersion: 1.0
+  assetPath: Assets/Soviet Television Electron 718/demo/LightingData.asset
+  uploadId: 263404

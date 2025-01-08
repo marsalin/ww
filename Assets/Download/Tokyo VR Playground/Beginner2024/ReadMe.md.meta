@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1345ab2d8e00a481e84ec336c18c3828
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 291269
+  packageName: Sample assets for a super introductory book published in Japan
+  packageVersion: 1.0.0
+  assetPath: Assets/Tokyo VR Playground/Beginner2024/ReadMe.md
+  uploadId: 698307

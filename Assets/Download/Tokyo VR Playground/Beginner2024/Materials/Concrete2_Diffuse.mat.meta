@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 193bb67c5884f4d258462aa8d10861d6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 291269
+  packageName: Sample assets for a super introductory book published in Japan
+  packageVersion: 1.0.0
+  assetPath: Assets/Tokyo VR Playground/Beginner2024/Materials/Concrete2_Diffuse.mat
+  uploadId: 698307
