@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3ae599e2cb0294697938224e3b55a111
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 158856
+  packageName: Vintage Radio
+  packageVersion: 1.0
+  assetPath: Assets/PolyLabs LLC/VintageRadio/Scenes/SampleScene/LightingData.asset
+  uploadId: 341981

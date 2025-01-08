@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0eeda3ade6de5a742b547b93250070aa
+timeCreated: 1501794891
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95730
+  packageName: Old lamp
+  packageVersion: 1.0
+  assetPath: Assets/OldLamp/Materials/Floor.mat
+  uploadId: 193726

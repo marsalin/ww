@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cde036104f974478088483273be55188
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 158856
+  packageName: Vintage Radio
+  packageVersion: 1.0
+  assetPath: Assets/PolyLabs LLC/VintageRadio/Materials/Frame.mat
+  uploadId: 341981

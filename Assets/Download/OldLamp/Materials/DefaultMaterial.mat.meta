@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 55c1c7b1419dc3647b823cd58ecf8d81
+timeCreated: 1500241268
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95730
+  packageName: Old lamp
+  packageVersion: 1.0
+  assetPath: Assets/OldLamp/Materials/DefaultMaterial.mat
+  uploadId: 193726
