@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 6f1418cffd12146f2a83be795f6fa5a7
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 46755
+  packageName: Tea and Coffee service
+  packageVersion: 1.0
+  assetPath: Assets/DEMO/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset2.shader
+  uploadId: 82807
