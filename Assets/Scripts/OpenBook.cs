@@ -1,31 +1,33 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class OpenBook : MonoBehaviour, IInteractable
 {
-    public GameObject leftCube;
-    public bool bookIsOpen;
-    public Player player;
+    [FormerlySerializedAs("leftCube")] public GameObject openable;
+    [FormerlySerializedAs("bookIsOpen")] public bool isOpen;
+    public Vector3 openPosition;
+    public Vector3 closePosition;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (player == null)
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        OpenTheBook();
+        Open();
     }
     
-    public void OpenTheBook()
+    public void Open()
     {
-        leftCube.transform.localRotation = Quaternion.Lerp(leftCube.transform.localRotation, Quaternion.Euler(bookIsOpen ? 90 : -90, 0, 0), Time.deltaTime * 5);
+        openable.transform.localRotation = Quaternion.Lerp(openable.transform.localRotation, Quaternion.Euler(isOpen ? openPosition : closePosition), Time.deltaTime * 5);
     }
     
     public void Interact()
     {
-       bookIsOpen = !bookIsOpen; 
+       isOpen = !isOpen; 
     }
 }
 

@@ -20,6 +20,5 @@ public class GameManagerInstance : MonoBehaviour
     }
 
     private static GameManagerInstance instance;
-    public int width;
-    public int height;
+    public int size;
 }

@@ -72,21 +72,21 @@ public class Maze : MonoBehaviour
 
     public IEnumerator GenerateMazeFloor()
     {
-        for (int i = 0; i < GameManagerInstance.Instance.width; i++)
+        for (int i = 0; i < GameManagerInstance.Instance.size; i++)
         {
-            for (int j = 0; j < GameManagerInstance.Instance.height; j++)
+            for (int j = 0; j < GameManagerInstance.Instance.size; j++)
             {
-                if (i == GameManagerInstance.Instance.width - 1 && j != GameManagerInstance.Instance.height - 1)
+                if (i == GameManagerInstance.Instance.size - 1 && j != GameManagerInstance.Instance.size - 1)
                 {
                     Vector3 posRight = new Vector3(i * prefabWidth, 0, j * prefabWidth);
                     Instantiate(rightFloorPrefab, posRight, Quaternion.identity);
                 }
-                else if (j == GameManagerInstance.Instance.height - 1 && i != GameManagerInstance.Instance.width - 1)
+                else if (j == GameManagerInstance.Instance.size - 1 && i != GameManagerInstance.Instance.size - 1)
                 {
                     Vector3 posDown = new Vector3(i * prefabWidth, 0, j * prefabWidth);
                     Instantiate(downFloorPrefab, posDown, Quaternion.identity);
                 }
-                else if (i == GameManagerInstance.Instance.width - 1 && j == GameManagerInstance.Instance.height - 1)
+                else if (i == GameManagerInstance.Instance.size - 1 && j == GameManagerInstance.Instance.size - 1)
                 {
                     Vector3 posCorner = new Vector3(i * prefabWidth, 0, j * prefabWidth);
                     Instantiate(cornerFloorPrefab, posCorner, Quaternion.identity);
@@ -98,7 +98,7 @@ public class Maze : MonoBehaviour
                 }
             }
 
-            if (i % (GameManagerInstance.Instance.width / 10) == 0)
+            if (i % (GameManagerInstance.Instance.size / 10) == 0)
             {
                 percentage = percentage + 2.0f;
                 percentage = Mathf.Clamp(percentage, 0, 20);
@@ -115,10 +115,10 @@ public class Maze : MonoBehaviour
 
     public IEnumerator InitializeGrid()
     {
-        cells = new Cell[GameManagerInstance.Instance.width, GameManagerInstance.Instance.height];
-        for (int x = 0; x < GameManagerInstance.Instance.width; x++)
+        cells = new Cell[GameManagerInstance.Instance.size, GameManagerInstance.Instance.size];
+        for (int x = 0; x < GameManagerInstance.Instance.size; x++)
         {
-            for (int y = 0; y < GameManagerInstance.Instance.height; y++)
+            for (int y = 0; y < GameManagerInstance.Instance.size; y++)
             {
                 cells[x, y] = new Cell(x, y);
             }
@@ -152,17 +152,16 @@ public class Maze : MonoBehaviour
                 stack.Pop();
             }
         }
-        Cell entranceCell = cells[0, Random.Range(0, GameManagerInstance.Instance.width)];
-        entranceCellPos = entranceCell.position;
+        Cell entranceCell = cells[0, Random.Range(0, GameManagerInstance.Instance.size)];
+        entranceCellPos = entranceCell.position; 
         entranceCell.neighbors[(int)EDirection.LEFT] = false;
         
-        Cell exitCell = cells[GameManagerInstance.Instance.width - 1, Random.Range(0, GameManagerInstance.Instance.height)];
+        Cell exitCell = cells[GameManagerInstance.Instance.size - 1, Random.Range(0, GameManagerInstance.Instance.size)];
         exitCellPos = exitCell.position;
         exitCell.neighbors[(int)EDirection.RIGHT] = false;
         
-        Cell mazeMiddleCell = cells[GameManagerInstance.Instance.height / 2, GameManagerInstance.Instance.width / 2];
+        Cell mazeMiddleCell = cells[GameManagerInstance.Instance.size / 2, GameManagerInstance.Instance.size / 2];
         mazeMiddleCellPos = mazeMiddleCell.position;
-        
         
         Vector3 entranceCellWorldPosRoom = new Vector3(entranceCellPos.y * prefabWidth, 0, (entranceCellPos.x * prefabWidth) - prefabWidth);
         Instantiate(startRoomPrefab, entranceCellWorldPosRoom, Quaternion.identity);
@@ -179,11 +178,11 @@ public class Maze : MonoBehaviour
 
     public IEnumerator GenerateWalls()
     {
-        for (int i = 0; i < GameManagerInstance.Instance.width; i++)
+        for (int i = 0; i < GameManagerInstance.Instance.size; i++)
         {
-            for (int j = 0; j < GameManagerInstance.Instance.height; j++)
+            for (int j = 0; j < GameManagerInstance.Instance.size; j++)
             {
-                Cell cell = cells[j, i];
+                Cell cell = cells[i, j];
                 Vector3 cellPos = new Vector3(j * prefabWidth, 0, i * prefabWidth);
                 
                 if (cell.neighbors[(int)EDirection.UP])
@@ -219,7 +218,7 @@ public class Maze : MonoBehaviour
                     }
                 }
                 
-                if (j == GameManagerInstance.Instance.height - 1 && cell.neighbors[(int)EDirection.DOWN]) 
+                if (j == GameManagerInstance.Instance.size - 1 && cell.neighbors[(int)EDirection.DOWN]) 
                 {
                     Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
                     Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
@@ -285,7 +284,7 @@ public class Maze : MonoBehaviour
                     }
                 }
                 
-                if (i == GameManagerInstance.Instance.width - 1 && cell.neighbors[(int)EDirection.RIGHT])
+                if (i == GameManagerInstance.Instance.size - 1 && cell.neighbors[(int)EDirection.RIGHT])
                 {
                     Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
                     Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
@@ -319,7 +318,7 @@ public class Maze : MonoBehaviour
                 }
             }
 
-            if (i % (GameManagerInstance.Instance.width / 5) == 0)
+            if (i % (GameManagerInstance.Instance.size / 5) == 0)
             {
                 percentage = percentage + 1.25f;
                 percentage = Mathf.Clamp(percentage, 45.0f, 70.0f);
@@ -415,7 +414,6 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
     {
         float gridWidth = 8f;
         Vector2Int startCell = entranceCellPos;
-        Debug.Log(entranceCellPos);
         Vector3 entranceCellWorldPos = new Vector3(startCell.y * gridWidth, 0.0f, (startCell.x * gridWidth) - gridWidth);
         player.transform.position = entranceCellWorldPos;
         percentage = 99.0f;
@@ -423,7 +421,6 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
         LoadingScreen.Instance.SetPercentage(percentage, loadingText);
         yield return null;
     }
-
    
     public void RemoveWalls(Cell currentCell, Cell nextCell)
     {
@@ -467,7 +464,7 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
             neighborsVisited.Add(cells[x - 1, y]);
         }
 
-        if (x < GameManagerInstance.Instance.width - 1 && !cells[x + 1, y].visited)
+        if (x < GameManagerInstance.Instance.size - 1 && !cells[x + 1, y].visited)
         {
             neighborsVisited.Add(cells[x + 1, y]);
         }
@@ -477,7 +474,7 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
             neighborsVisited.Add(cells[x, y - 1]);
         }
 
-        if (y < GameManagerInstance.Instance.height - 1 && !cells[x, y + 1].visited)
+        if (y < GameManagerInstance.Instance.size - 1 && !cells[x, y + 1].visited)
         {
             neighborsVisited.Add(cells[x, y + 1]);
         }

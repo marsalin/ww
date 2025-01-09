@@ -355,7 +355,7 @@ public class Player : MonoBehaviour
             Debug.DrawLine(mainCamera.transform.position, hit.point, Color.magenta);
             if (hit.collider.gameObject.CompareTag("Wardrobe") || hit.collider.gameObject.CompareTag("Bed") ||
                 hit.collider.gameObject.CompareTag("Radio") || hit.collider.gameObject.CompareTag("Book") ||
-                hit.collider.gameObject.CompareTag("Trunk"))
+                hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat"))
             {
                 pressEText.enabled = true;
             }

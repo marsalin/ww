@@ -43,8 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayEasy()
     {
-        GameManagerInstance.Instance.height = 15;
-        GameManagerInstance.Instance.width = 12;
+        GameManagerInstance.Instance.size = 10;
         SceneManager.LoadScene("Game");
     }
 
@@ -58,8 +57,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayMedium()
     {
-        GameManagerInstance.Instance.height = 20;
-        GameManagerInstance.Instance.width = 20;
+        GameManagerInstance.Instance.size = 20;
         SceneManager.LoadScene("Game");
     }
 
@@ -74,8 +72,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayHard()
     {
-        GameManagerInstance.Instance.height = 25;
-        GameManagerInstance.Instance.width = 25;
+        GameManagerInstance.Instance.size = 25;
         SceneManager.LoadScene("Game");
     }
 

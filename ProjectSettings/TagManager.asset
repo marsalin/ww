@@ -25,6 +25,7 @@ TagManager:
   - Book
   - CoffeePos
   - Trunk
+  - Cat
   layers:
   - Default
   - TransparentFX

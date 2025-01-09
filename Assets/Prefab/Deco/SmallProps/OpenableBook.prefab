@@ -121,9 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686feeeed1a473b43a37f59c354a65b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftCube: {fileID: 3314155400659741963}
-  bookIsOpen: 0
-  player: {fileID: 0}
+  openable: {fileID: 3314155400659741963}
+  isOpen: 0
+  openPosition: {x: 90, y: 0, z: 0}
+  closePosition: {x: -90, y: 0, z: 0}
 --- !u!65 &3804065794119512591
 BoxCollider:
   m_ObjectHideFlags: 0
