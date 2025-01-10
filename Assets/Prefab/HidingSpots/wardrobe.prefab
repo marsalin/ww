@@ -90,6 +90,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wardrobe
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
       propertyPath: m_LocalScale.x
       value: 180

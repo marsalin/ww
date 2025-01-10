@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Slider volumeSlider;
     [FormerlySerializedAs("endGame")] public GameObject escapeMenu;
     public GameObject easyDescription, mediumDescription, hardDescription;
-    
+    public AudioClip clickSound;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayEasy()
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         GameManagerInstance.Instance.size = 10;
         SceneManager.LoadScene("Game");
     }
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayMedium()
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         GameManagerInstance.Instance.size = 20;
         SceneManager.LoadScene("Game");
     }
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour
     }
     public void PlayHard()
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         GameManagerInstance.Instance.size = 25;
         SceneManager.LoadScene("Game");
     }
@@ -88,6 +91,7 @@ public class GameManager : MonoBehaviour
     
     public void Settings()
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         menue.SetActive(false);
         settings.SetActive(true);
         play.SetActive(false);
@@ -101,12 +105,14 @@ public class GameManager : MonoBehaviour
 
     public void SetMaxVolume(float volume)
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 1.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }
 
     public void SetMinVolume(float volume)
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }

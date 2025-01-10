@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class MenuManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class MenuManager : MonoBehaviour
     public GameObject escapeObject;
     public GameObject settings;
     public bool isPaused;
-
+    public AudioClip clickSound;
     public Player player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,7 +45,7 @@ public class MenuManager : MonoBehaviour
 
     public void Continue()
     {
-        AudioManagerScript.Instance.PlaySound(1);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         escapeObject.SetActive(false);
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
@@ -54,13 +55,13 @@ public class MenuManager : MonoBehaviour
     
     public void MainMenu()
     {
-        AudioManagerScript.Instance.PlaySound(1);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         SceneManager.LoadScene("Menu");
     }
 
     public void Settings()
     {
-        AudioManagerScript.Instance.PlaySound(1);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         settings.SetActive(true);
         escapeObject.SetActive(false);
         Time.timeScale = 0;
@@ -68,20 +69,20 @@ public class MenuManager : MonoBehaviour
 
     public void Mute(float volume)
     {
-        AudioManagerScript.Instance.PlaySound(2);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }
     public void SetMaxVolume(float volume)
     {
-        AudioManagerScript.Instance.PlaySound(3);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 1.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }
 
     public void SetVolume(float volume)
     {
-        AudioManagerScript.Instance.PlaySound(4);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = volume;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }
@@ -98,21 +99,21 @@ public class MenuManager : MonoBehaviour
 
     public void GoBack()
     {
-        AudioManagerScript.Instance.PlaySound(1);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         escapeObject.SetActive(true);
         settings.SetActive(false);
     }
 
     public void TryAgain()
     {
-        AudioManagerScript.Instance.PlaySound(1);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     
 
     public void EndGame()
     {
-        AudioManagerScript.Instance.PlaySound(5);
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         Application.Quit();
     }
 }

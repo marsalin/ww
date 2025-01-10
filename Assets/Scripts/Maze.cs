@@ -37,6 +37,7 @@ public class Maze : MonoBehaviour
     public GameObject downFloorPrefab;
     public GameObject cornerFloorPrefab;
     public GameObject wallPrefab;
+    public GameObject wallLampPrefab;
 
     [Header("Positions")]
     public Vector3 exitCellWorldPosRoom;
@@ -187,11 +188,20 @@ public class Maze : MonoBehaviour
                 
                 if (cell.neighbors[(int)EDirection.UP])
                 {
-                    Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
-                    Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
-                    Instantiate(wallPrefab, wallPos, rotation, transform);
+                    if (i % 3 == 0)
+                    {
+                        Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
+                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                    }
+                    else
+                    {
+                        Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
+                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                    }
                     
-                    int random = Random.Range(0, 8);
+                    int random = Random.Range(0, 3);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -201,14 +211,14 @@ public class Maze : MonoBehaviour
                         Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
                         int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0)
+                        if (randomDecoSpawn == 0 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
                             Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
                             Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
                         }
-                        else if (randomDecoSpawn == 1)
+                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
@@ -220,11 +230,21 @@ public class Maze : MonoBehaviour
                 
                 if (j == GameManagerInstance.Instance.size - 1 && cell.neighbors[(int)EDirection.DOWN]) 
                 {
-                    Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
-                    Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
-                    Instantiate(wallPrefab, wallPos, rotation, transform);
+                    if (i % 3 == 0)
+                    {
+                        Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
+                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                    }
                     
-                    int random = Random.Range(0, 8);
+                    else
+                    {
+                        Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
+                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                    }
+                    
+                    int random = Random.Range(0, 3);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -234,14 +254,14 @@ public class Maze : MonoBehaviour
                         Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
                         int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0)
+                        if (randomDecoSpawn == 0 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
                             Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
                             Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
                         }
-                        else if (randomDecoSpawn == 1)
+                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
@@ -253,11 +273,26 @@ public class Maze : MonoBehaviour
                 
                 if ( cell.neighbors[(int)EDirection.LEFT])
                 {
-                    Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
-                    Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                    Instantiate(wallPrefab, wallPos, rotation, transform);
+                    if (j % 2 == 0)
+                    {
+                        Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
+                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                    }
+                    else if (j % 5 == 0)
+                    {
+                        Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
+                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                    }
+                    else
+                    {
+                        Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
+                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                    }
                     
-                    int random = Random.Range(0, 8);
+                    int random = Random.Range(0, 3);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -267,14 +302,14 @@ public class Maze : MonoBehaviour
                         Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
                         int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0)
+                        if (randomDecoSpawn == 0 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
                             Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
                             Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
                         }
-                        else if (randomDecoSpawn == 1)
+                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
@@ -286,11 +321,20 @@ public class Maze : MonoBehaviour
                 
                 if (i == GameManagerInstance.Instance.size - 1 && cell.neighbors[(int)EDirection.RIGHT])
                 {
-                    Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
-                    Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
-                    Instantiate(wallPrefab, wallPos, rotation, transform);
+                    if (j % 3 == 0)
+                    {
+                        Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
+                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                    }
+                    else
+                    {
+                        Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
+                        Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
+                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                    }
                     
-                    int random = Random.Range(0, 8);
+                    int random = Random.Range(0, 3);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -300,14 +344,14 @@ public class Maze : MonoBehaviour
                         Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
                         int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0)
+                        if (randomDecoSpawn == 0 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
                             Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
                             Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
                         }
-                        else if (randomDecoSpawn == 1)
+                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
                         {
                             int randomDeco = Random.Range(0, decoPrefab.Length);
                             Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);

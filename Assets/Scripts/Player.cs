@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
     public TMP_Text pressEText;
     public GameObject vignette;
     public GameObject deathVignette;
-    public Text deathText;
 
     [Header("Animate")] public Animator animator;
     public GameObject lanternCube;
@@ -90,10 +89,14 @@ public class Player : MonoBehaviour
     public AudioClip footstepRugSprint;
     public AudioClip bonecrack;
     public bool hasStopped;
+    public AudioClip exhale;
+    public AudioSource breathingSource;
+    public AudioSource exhaleSource;
 
     [Header("End")] public bool endGame;
     public GameObject deathScreenObject;
     private MenuManager menuManager;
+    public bool deactivateScript;
 
     /*
      * maze book 27
@@ -108,6 +111,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         canMove = false;
+        deactivateScript = false;
         Cursor.lockState = CursorLockMode.Locked;
         characterController = GetComponent<CharacterController>();
         maze = FindFirstObjectByType<Maze>();
@@ -115,9 +119,8 @@ public class Player : MonoBehaviour
         pressEText.enabled = false;
         vignette.SetActive(false);
         deathVignette.SetActive(false);
-        deathText.enabled = false;
         deathScreenObject.SetActive(false);
-        AudioManagerScript.Instance.breathingSource.Play();
+        BreathSound(breathWalk);
         lastPlayerRotation = transform.rotation.eulerAngles;
     }
 
@@ -181,7 +184,7 @@ public class Player : MonoBehaviour
 
         staminaSlider.value = stamina;
         if (staminaSlider.value <= 0)
-            AudioManagerScript.Instance.Exhale();
+            Exhale();
         MovementSpeed();
         moveSpeed = Mathf.Lerp(moveSpeed, targetSpeed, Time.deltaTime * 10f);
         Vector3 movement = (transform.right * moveRight + transform.forward * moveForwards).normalized;
@@ -341,7 +344,7 @@ public class Player : MonoBehaviour
 
         if (playerHealth == 1 && spawnButterfly)
         {
-            Instantiate(butterflyPrefab, spawnPos, Quaternion.identity);
+            Instantiate(butterflyPrefab, transform.position, Quaternion.identity);
             spawnButterfly = false;
         }
     }
@@ -396,8 +399,9 @@ public class Player : MonoBehaviour
         else if (playerHealth == 0)
         {
             isDead = true;
+            canMove = false;
             deathVignette.SetActive(true);
-            deathText.enabled = true;
+            deactivateScript = true;
         }
         else
         {
@@ -464,34 +468,51 @@ public class Player : MonoBehaviour
     {
         if (isSprinting && !isPlayingSprintSound)
         {
-            AudioManagerScript.Instance.BreathSound(breathSprint);
+            BreathSound(breathSprint);
             isPlayingSprintSound = true;
             isPlayingWalkSound = false;
             hasStopped = false;
         }
         else if (!isSprinting && !isPlayingWalkSound && !holdingBreath)
         {
-            AudioManagerScript.Instance.BreathSound(breathWalk);
+            BreathSound(breathWalk);
             isPlayingWalkSound = true;
             isPlayingSprintSound = false;
             hasStopped = false;
         }
         else if (holdingBreath && stamina > 0 && !hasStopped)
         {
-            AudioManagerScript.Instance.StopBreathSound();
+            StopBreathSound();
             isPlayingWalkSound = false;
             isPlayingSprintSound = false;
             hasStopped = true;
         }
     }
+    public void Exhale()
+    {
+        if (exhaleSource != null)
+            Destroy(exhaleSource.gameObject);
+        exhaleSource = AudioManagerScript.Instance.PlaySound2D(exhale);
+    }
+
+    public void BreathSound(AudioClip breathingClip)
+    {
+        if (breathingSource != null)
+            Destroy(breathingSource.gameObject);
+        breathingSource = AudioManagerScript.Instance.PlaySound2D(breathingClip, loop: true);
+    }
+    public void StopBreathSound()
+    {
+        breathingSource?.Stop();
+    }
 
     public void WalkingFootsteps(AnimationEvent animationevent)
     {
-        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk);
+        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject);
     }
 
     public void SprintingFootsteps(AnimationEvent animationevent)
     {
-        AudioManagerScript.Instance.FootstepSound(footstepSprint, footstepRugSprint);
+        AudioManagerScript.Instance.FootstepSound(footstepSprint, footstepRugSprint, gameObject);
     }
 }

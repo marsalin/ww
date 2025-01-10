@@ -54,8 +54,6 @@ public class Enemy : MonoBehaviour
         
         if (goMiddleCell)
             agent.destination = middleCellPos;
-        
-        Debug.Log(agent.destination);
     }
 
     private bool SnapPosition(Vector3 pos, float maxDistance, out Vector3 snappedPos)
@@ -93,10 +91,10 @@ public class Enemy : MonoBehaviour
                 lastPlayerPos = snappedPos;
             }
             agent.destination = player.transform.position;
-            timer = 2f;
+            timer = 1f;
         }
-        else if ((!playerFound && !playerFinished) && (AudioManagerScript.Instance.playedExhaleSound ||
-                                  AudioManagerScript.Instance.playedBreathingSound) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange)
+        else if ((!playerFound && !playerFinished) && (player.exhaleSource != null ||
+                                  player.breathingSource != null) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange)
         {
             Vector3 snappedPos;
             if (SnapPosition(player.transform.position, snapDistance, out snappedPos))
@@ -104,8 +102,7 @@ public class Enemy : MonoBehaviour
                 lastPlayerPos = snappedPos;
             }
             agent.destination = player.transform.position;
-            timer = 2f;
-            AudioManagerScript.Instance.playedExhaleSound = false;   
+            timer = 1f;
         }
         
         else if (!playerFound)
@@ -172,7 +169,6 @@ public class Enemy : MonoBehaviour
         hitPlayer = false;
         if (player.playerHealth == 0)
         {
-            player.deathText.enabled = false;
             player.deathScreenObject.SetActive(true);
             player.enabled = false;
             Time.timeScale = 0;

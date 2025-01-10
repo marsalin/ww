@@ -40,27 +40,23 @@ public class OpenDoor : MonoBehaviour, IInteractable
     {
         if (!isOpen && openDoor)
         {
-            AudioManagerScript.Instance.SimpleSound(openSound);
+            AudioManagerScript.Instance.PlaySound3D(openSound, transform.position);
             openDoor = false;
             leftDoorCollider.enabled = false;
             rightDoorCollider.enabled = false;
-            //Debug.Log("Collider off");
         }
         else if (isOpen && !openDoor)
         {
-            AudioManagerScript.Instance.SimpleSound(closeSound);
+            AudioManagerScript.Instance.PlaySound3D(closeSound, transform.position);
             openDoor = true;
             leftDoorCollider.enabled = true;
             rightDoorCollider.enabled = true;
-            //Debug.Log("Collider off");
         }
         else if (!isOpen)
         {
             leftDoorCollider.enabled = true;
             rightDoorCollider.enabled = true;
-            //Debug.Log("Collider on");
         }
-            
     }
     public void Interact()
     {

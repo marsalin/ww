@@ -764,7 +764,7 @@ MonoBehaviour:
   middleCellPos: {x: 0, y: 0, z: 0}
   enemyAnimator: {fileID: 5884077091816401275}
   viewRange: 30
-  hearingRange: 15
+  hearingRange: 8
   playerLayer:
     serializedVersion: 2
     m_Bits: 193
@@ -773,7 +773,7 @@ MonoBehaviour:
   hitRangeAnimation: 3
   hitPlayer: 0
   hitPlayerRange: 2
-  timer: 2
+  timer: 1
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5
   minDistance: 25
