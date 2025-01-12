@@ -62,8 +62,8 @@ public class MenuManager : MonoBehaviour
     public void Settings()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
-        settings.SetActive(true);
         escapeObject.SetActive(false);
+        settings.SetActive(true);
         Time.timeScale = 0;
     }
 
