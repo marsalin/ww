@@ -36,8 +36,8 @@ public class Maze : MonoBehaviour
     public GameObject rightFloorPrefab;
     public GameObject downFloorPrefab;
     public GameObject cornerFloorPrefab;
-    public GameObject wallPrefab;
-    public GameObject wallLampPrefab;
+    public GameObject[] wallPrefab;
+    public GameObject[] wallLampPrefab;
 
     [Header("Positions")]
     public Vector3 exitCellWorldPosRoom;
@@ -190,15 +190,17 @@ public class Maze : MonoBehaviour
                 {
                     if (i % 3 == 0)
                     {
+                        int randomWallLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
-                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                        Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else
                     {
+                        int randomLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
-                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
                     int random = Random.Range(0, 3);
@@ -232,16 +234,18 @@ public class Maze : MonoBehaviour
                 {
                     if (i % 3 == 0)
                     {
+                        int randomWallLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
-                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                        Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     
                     else
                     {
+                        int randomLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
-                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
                     int random = Random.Range(0, 3);
@@ -275,21 +279,24 @@ public class Maze : MonoBehaviour
                 {
                     if (j % 2 == 0)
                     {
+                        int randomWallLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                        Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else if (j % 5 == 0)
                     {
+                        int randomWallLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
-                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                        Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else
                     {
+                        int randomLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
                     int random = Random.Range(0, 3);
@@ -323,15 +330,17 @@ public class Maze : MonoBehaviour
                 {
                     if (j % 3 == 0)
                     {
+                        int randomWallLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallLampPrefab, wallPos, rotation, transform);
+                        Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else
                     {
+                        int randomLamp = Random.Range(0, 2);
                         Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallPrefab, wallPos, rotation, transform);
+                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
                     int random = Random.Range(0, 3);

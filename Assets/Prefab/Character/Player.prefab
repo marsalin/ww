@@ -8665,7 +8665,7 @@ MonoBehaviour:
   deathTime: 5
   interactionRange: 2
   enemyspawnTimer: 10
-  enemyPrefab: {fileID: 4006125287214217462, guid: 3c98a541ed4bedc4a8f3b854fff59c25, type: 3}
+  enemyPrefab: {fileID: 8046713648695261961, guid: fabde8c6c1ecdb94c84cc09ae61da002, type: 3}
   spawn: 0
   spawnTimer: 0
   butterflyPrefab: {fileID: 8944865420020568500, guid: 18141f562e654dc42bb1d0af1a9abbb0, type: 3}

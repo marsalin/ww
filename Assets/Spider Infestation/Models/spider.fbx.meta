@@ -1,0 +1,2654 @@
+fileFormatVersion: 2
+guid: 8419ae74331b7e244986a3788edb7d65
+timeCreated: 1434535231
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: DEF-abdomen
+    100002: DEF-fang_1.L
+    100004: DEF-fang_1.R
+    100006: DEF-fang_2.L
+    100008: DEF-fang_2.R
+    100010: DEF-head
+    100012: DEF-leg_a1.L
+    100014: DEF-leg_a1.R
+    100016: DEF-leg_a2.L
+    100018: DEF-leg_a2.R
+    100020: DEF-leg_a3.L
+    100022: DEF-leg_a3.R
+    100024: DEF-leg_b1.L
+    100026: DEF-leg_b1.R
+    100028: DEF-leg_b2.L
+    100030: DEF-leg_b2.R
+    100032: DEF-leg_b3.L
+    100034: DEF-leg_b3.R
+    100036: DEF-leg_c1.L
+    100038: DEF-leg_c1.R
+    100040: DEF-leg_c2.L
+    100042: DEF-leg_c2.R
+    100044: DEF-leg_c3.L
+    100046: DEF-leg_c3.R
+    100048: DEF-leg_d1.L
+    100050: DEF-leg_d1.R
+    100052: DEF-leg_d2.L
+    100054: DEF-leg_d2.R
+    100056: DEF-leg_d3.L
+    100058: DEF-leg_d3.R
+    100060: DEF-root
+    100062: DEF-thorax
+    100064: DEF-waist
+    100066: rig
+    100068: spider
+    100070: //RootNode
+    100072: leg_a.01.L
+    100074: leg_a.01.R
+    100076: leg_a.02.L
+    100078: leg_a.02.R
+    100080: leg_b.01.L
+    100082: leg_b.01.R
+    100084: leg_b.02.L
+    100086: leg_b.02.R
+    100088: leg_c.01.L
+    100090: leg_c.01.R
+    100092: leg_c.02.L
+    100094: leg_c.02.R
+    100096: leg_d.01.L
+    100098: leg_d.01.R
+    100100: leg_d.02.L
+    100102: leg_d.02.R
+    100104: MCH-leg_a_stretch.L
+    100106: MCH-leg_a_stretch.R
+    100108: MCH-leg_b_stretch.L
+    100110: MCH-leg_b_stretch.R
+    100112: MCH-leg_c_stretch.L
+    100114: MCH-leg_c_stretch.R
+    100116: MCH-leg_d_stretch.L
+    100118: MCH-leg_d_stretch.R
+    100120: MCH-thorax
+    100122: root
+    100124: thorax_parent
+    400000: DEF-abdomen
+    400002: DEF-fang_1.L
+    400004: DEF-fang_1.R
+    400006: DEF-fang_2.L
+    400008: DEF-fang_2.R
+    400010: DEF-head
+    400012: DEF-leg_a1.L
+    400014: DEF-leg_a1.R
+    400016: DEF-leg_a2.L
+    400018: DEF-leg_a2.R
+    400020: DEF-leg_a3.L
+    400022: DEF-leg_a3.R
+    400024: DEF-leg_b1.L
+    400026: DEF-leg_b1.R
+    400028: DEF-leg_b2.L
+    400030: DEF-leg_b2.R
+    400032: DEF-leg_b3.L
+    400034: DEF-leg_b3.R
+    400036: DEF-leg_c1.L
+    400038: DEF-leg_c1.R
+    400040: DEF-leg_c2.L
+    400042: DEF-leg_c2.R
+    400044: DEF-leg_c3.L
+    400046: DEF-leg_c3.R
+    400048: DEF-leg_d1.L
+    400050: DEF-leg_d1.R
+    400052: DEF-leg_d2.L
+    400054: DEF-leg_d2.R
+    400056: DEF-leg_d3.L
+    400058: DEF-leg_d3.R
+    400060: DEF-root
+    400062: DEF-thorax
+    400064: DEF-waist
+    400066: rig
+    400068: spider
+    400070: //RootNode
+    400072: leg_a.01.L
+    400074: leg_a.01.R
+    400076: leg_a.02.L
+    400078: leg_a.02.R
+    400080: leg_b.01.L
+    400082: leg_b.01.R
+    400084: leg_b.02.L
+    400086: leg_b.02.R
+    400088: leg_c.01.L
+    400090: leg_c.01.R
+    400092: leg_c.02.L
+    400094: leg_c.02.R
+    400096: leg_d.01.L
+    400098: leg_d.01.R
+    400100: leg_d.02.L
+    400102: leg_d.02.R
+    400104: MCH-leg_a_stretch.L
+    400106: MCH-leg_a_stretch.R
+    400108: MCH-leg_b_stretch.L
+    400110: MCH-leg_b_stretch.R
+    400112: MCH-leg_c_stretch.L
+    400114: MCH-leg_c_stretch.R
+    400116: MCH-leg_d_stretch.L
+    400118: MCH-leg_d_stretch.R
+    400120: MCH-thorax
+    400122: root
+    400124: thorax_parent
+    4300000: spider
+    7400000: rig|_die_02
+    7400002: rig|_eating
+    7400004: rig|_gethit_02
+    7400006: rig|_rest_pose
+    7400008: rig|attack_01
+    7400010: rig|attack_02
+    7400012: rig|die_01
+    7400014: rig|fang_bend
+    7400016: rig|gethit_01
+    7400018: rig|idle_01
+    7400020: rig|idle_02
+    7400022: rig|idle_03
+    7400024: rig|walk
+    7400026: rig|attack_03
+    7400028: rig|die_02
+    7400030: rig|dodge_01
+    7400032: rig|dodge_03
+    7400034: rig|dodge_02
+    7400036: rig|eating
+    7400038: rig|leap
+    7400040: rig|rest_pose
+    9500000: //RootNode
+    13700000: spider
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: rig|rest_pose
+      takeName: rig|rest_pose
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|attack_01
+      takeName: rig|attack_01
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|attack_02
+      takeName: rig|attack_02
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|attack_03
+      takeName: rig|attack_03
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|die_01
+      takeName: rig|die_01
+      firstFrame: 0
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|die_02
+      takeName: rig|die_02
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|dodge_01
+      takeName: rig|dodge_01
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|dodge_03
+      takeName: rig|dodge_03
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|dodge_02
+      takeName: rig|dodge_02
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|eating
+      takeName: rig|eating
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|gethit_01
+      takeName: rig|gethit_01
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|idle_01
+      takeName: rig|idle_01
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|idle_02
+      takeName: rig|idle_02
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|idle_03
+      takeName: rig|idle_03
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|leap
+      takeName: rig|leap
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: rig|walk
+      takeName: rig|walk
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/DEF-root
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.L/DEF-fang_2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-head/DEF-fang_1.R/DEF-fang_2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.L/DEF-leg_a2.L/DEF-leg_a3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_a1.R/DEF-leg_a2.R/DEF-leg_a3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.L/DEF-leg_b2.L/DEF-leg_b3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_b1.R/DEF-leg_b2.R/DEF-leg_b3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.L/DEF-leg_c2.L/DEF-leg_c3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_c1.R/DEF-leg_c2.R/DEF-leg_c3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.L/DEF-leg_d2.L/DEF-leg_d3.L
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-leg_d1.R/DEF-leg_d2.R/DEF-leg_d3.R
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist
+        weight: 1
+      - path: rig/DEF-root/DEF-thorax/DEF-waist/DEF-abdomen
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/thorax_parent
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.L/leg_a.02.L/MCH-leg_a_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_a.01.R/leg_a.02.R/MCH-leg_a_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.L/leg_b.02.L/MCH-leg_b_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_b.01.R/leg_b.02.R/MCH-leg_b_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.L/leg_c.02.L/MCH-leg_c_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_c.01.R/leg_c.02.R/MCH-leg_c_stretch.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.L/leg_d.02.L/MCH-leg_d_stretch.L
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R
+        weight: 1
+      - path: rig/root/thorax_parent/MCH-thorax/leg_d.01.R/leg_d.02.R/MCH-leg_d_stretch.R
+        weight: 1
+      - path: spider
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: DEF-root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 30616
+  packageName: Spider Infestation Pack
+  packageVersion: 1.0
+  assetPath: Assets/Spider Infestation/Models/spider.fbx
+  uploadId: 71036

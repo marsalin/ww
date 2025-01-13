@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b5bc5b0b8f28ed54691ddf2ee184bc2e
+timeCreated: 1472439926
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 70847
+  packageName: Tim's Horror Assets - The Bloody Door
+  packageVersion: 1.2
+  assetPath: Assets/Tim's Assets/Doors/Animation/Door.controller
+  uploadId: 248960
