@@ -165,7 +165,7 @@ public class Maze : MonoBehaviour
         mazeMiddleCellPos = mazeMiddleCell.position;
         
         Vector3 entranceCellWorldPosRoom = new Vector3(entranceCellPos.y * prefabWidth, 0, (entranceCellPos.x * prefabWidth) - prefabWidth);
-        Instantiate(startRoomPrefab, entranceCellWorldPosRoom, Quaternion.identity);
+        Instantiate(endRoomPrefab, entranceCellWorldPosRoom, Quaternion.identity);
         
         exitCellWorldPosRoom = new Vector3(exitCellPos.y * prefabWidth, 0, (exitCellPos.x * prefabWidth) + prefabWidth);
         Quaternion rotate = Quaternion.Euler(0f, 180f, 0f);
@@ -467,7 +467,7 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
     {
         float gridWidth = 8f;
         Vector2Int startCell = entranceCellPos;
-        Vector3 entranceCellWorldPos = new Vector3(startCell.y * gridWidth, 0.0f, (startCell.x * gridWidth) - gridWidth);
+        Vector3 entranceCellWorldPos = new Vector3(startCell.y * gridWidth, 0.0f, (startCell.x * gridWidth) - (gridWidth * 2));
         player.transform.position = entranceCellWorldPos;
         percentage = 99.0f;
         loadingText = "Setting player position...";

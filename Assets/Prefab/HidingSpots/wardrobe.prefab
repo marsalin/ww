@@ -348,12 +348,13 @@ MonoBehaviour:
   leftDoor: {fileID: 3314085701446520227}
   rightDoor: {fileID: 3314085701446520225}
   isOpen: 0
-  player: {fileID: 0}
   openSound: {fileID: 8300000, guid: 6cc4537865ae1479b9e7ac12ab172909, type: 3}
   closeSound: {fileID: 8300000, guid: 0210c1127dd754ced9c723f73428cc1c, type: 3}
   openDoor: 1
   leftDoorCollider: {fileID: 0}
   rightDoorCollider: {fileID: 0}
+  wardrobeObject: {fileID: 3314085701446520231}
+  animator: {fileID: 0}
 --- !u!64 &1500093639959408113
 MeshCollider:
   m_ObjectHideFlags: 0

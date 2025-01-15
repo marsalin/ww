@@ -94,9 +94,7 @@ public class Player : MonoBehaviour
     public AudioSource exhaleSource;
 
     [Header("End")] public bool endGame;
-    public GameObject deathScreenObject;
     private MenuManager menuManager;
-    public bool deactivateScript;
 
     /*
      * maze book 27
@@ -111,7 +109,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         canMove = false;
-        deactivateScript = false;
         Cursor.lockState = CursorLockMode.Locked;
         characterController = GetComponent<CharacterController>();
         maze = FindFirstObjectByType<Maze>();
@@ -119,7 +116,6 @@ public class Player : MonoBehaviour
         pressEText.enabled = false;
         vignette.SetActive(false);
         deathVignette.SetActive(false);
-        deathScreenObject.SetActive(false);
         BreathSound(breathWalk);
         lastPlayerRotation = transform.rotation.eulerAngles;
     }
@@ -358,7 +354,8 @@ public class Player : MonoBehaviour
             Debug.DrawLine(mainCamera.transform.position, hit.point, Color.magenta);
             if (hit.collider.gameObject.CompareTag("Wardrobe") || hit.collider.gameObject.CompareTag("Bed") ||
                 hit.collider.gameObject.CompareTag("Radio") || hit.collider.gameObject.CompareTag("Book") ||
-                hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat"))
+                hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat") ||
+                hit.collider.gameObject.CompareTag("Door") || hit.collider.gameObject.CompareTag("WardrobeDoll"))
             {
                 pressEText.enabled = true;
             }
@@ -398,10 +395,12 @@ public class Player : MonoBehaviour
         }
         else if (playerHealth == 0)
         {
+            mainCamera.transform.SetParent(mainCamera.GetComponent<CameraScript>().cameraPos); 
             isDead = true;
             canMove = false;
             deathVignette.SetActive(true);
-            deactivateScript = true;
+            animator.SetBool("Death", true);
+            enabled = false;
         }
         else
         {

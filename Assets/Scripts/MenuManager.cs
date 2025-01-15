@@ -14,17 +14,28 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        escapeObject.SetActive(false);
-        settings.SetActive(false);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            escapeObject.SetActive(false);
+            settings.SetActive(false);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            Time.timeScale = 1;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Escape"))
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            isPaused = !isPaused;
-            Escape();
+            if (Input.GetButtonDown("Escape")) 
+            { 
+                isPaused = !isPaused; 
+                Escape();
+            }  
         }
     }
     
@@ -52,7 +63,11 @@ public class MenuManager : MonoBehaviour
         isPaused = false;
         player.enabled = true;
     }
-    
+    public void TryAgain()
+    {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
+        SceneManager.LoadScene("Game");
+    }
     public void MainMenu()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
@@ -64,7 +79,6 @@ public class MenuManager : MonoBehaviour
         AudioManagerScript.Instance.PlaySound2D(clickSound);
         escapeObject.SetActive(false);
         settings.SetActive(true);
-        Time.timeScale = 0;
     }
 
     public void Mute(float volume)
@@ -103,14 +117,6 @@ public class MenuManager : MonoBehaviour
         escapeObject.SetActive(true);
         settings.SetActive(false);
     }
-
-    public void TryAgain()
-    {
-        AudioManagerScript.Instance.PlaySound2D(clickSound);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    
-
     public void EndGame()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);

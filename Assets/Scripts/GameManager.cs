@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("endGame")] public GameObject escapeMenu;
     public GameObject easyDescription, mediumDescription, hardDescription;
     public AudioClip clickSound;
+    public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +37,11 @@ public class GameManager : MonoBehaviour
         Escape();
     }
 
+    public void Animate()
+    {
+        animator.SetTrigger("Animate");
+    }
+    
     public void StartGame()
     {
         play.SetActive(true);
@@ -136,6 +142,11 @@ public class GameManager : MonoBehaviour
         easyDescription.SetActive(false);
         mediumDescription.SetActive(false);
         hardDescription.SetActive(false);
+    }
+
+    public void Click()
+    {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
     }
     public void QuitGame()
     {

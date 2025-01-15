@@ -141,7 +141,6 @@ public class Enemy : MonoBehaviour
             }
         }
         hitPlayerAnimation = false;
-        hitPlayer = false;
         return false;
     }
     public void Animate()
@@ -169,10 +168,10 @@ public class Enemy : MonoBehaviour
         hitPlayer = false;
         if (player.playerHealth == 0)
         {
-            player.deathScreenObject.SetActive(true);
             player.enabled = false;
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Death");
         }
     }
 
@@ -181,6 +180,7 @@ public class Enemy : MonoBehaviour
         agent.isStopped = false;
         endAnimation = false;
         goMiddleCell = true;
+        enemyAnimator.SetBool("EndWalk", true);
     }
 
     public void PlayerFinishedLevel()

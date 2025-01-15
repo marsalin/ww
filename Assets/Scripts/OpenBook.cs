@@ -18,6 +18,7 @@ public class OpenBook : MonoBehaviour, IInteractable
     void Update()
     {
         Open();
+        
     }
     
     public void Open()

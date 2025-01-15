@@ -95,7 +95,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8046713648695261961}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
+  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1e6de0e1f25f3c94a98296a2d7c2944b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -157,7 +157,7 @@ MonoBehaviour:
   hitPlayerAnimation: 0
   hitRangeAnimation: 3
   hitPlayer: 0
-  hitPlayerRange: 2
+  hitPlayerRange: 3
   timer: 1
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5
@@ -177,7 +177,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.8
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

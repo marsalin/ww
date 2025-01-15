@@ -8,18 +8,17 @@ public class OpenDoor : MonoBehaviour, IInteractable
     public GameObject leftDoor;
     public GameObject rightDoor;
     public bool isOpen;
-    public Player player;
     public AudioClip openSound;
     public AudioClip closeSound;
     public bool openDoor;
     public Collider leftDoorCollider;
     public Collider rightDoorCollider;
+    public GameObject wardrobeObject;
+    public Animator animator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (player == null)
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         leftDoorCollider = leftDoor.GetComponent<Collider>();
         rightDoorCollider = rightDoor.GetComponent<Collider>();
     }
@@ -58,9 +57,17 @@ public class OpenDoor : MonoBehaviour, IInteractable
             rightDoorCollider.enabled = true;
         }
     }
+    
     public void Interact()
     {
         DoorSound();
         isOpen = !isOpen;
+        if (wardrobeObject.tag == "WardrobeDoll")
+        {
+            if (isOpen)
+                animator.SetBool("Doll", true);
+            else
+                animator.SetBool("Doll", false);
+        }
     }
 }

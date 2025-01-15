@@ -503,6 +503,7 @@ MonoBehaviour:
   - {fileID: 3314085701446520231, guid: d8425a342934e5f4ca4a9bacfaa6090a, type: 3}
   - {fileID: 4014370384651053638, guid: 9889707d550d50140b8d82f4c7b01872, type: 3}
   - {fileID: 7270499583627912920, guid: 241c696bfe764c146a39ba0a329ceb5f, type: 3}
+  - {fileID: 4534021809648695337, guid: 24bdad8983574934eb54818dd9f51a7a, type: 3}
   decoPrefab:
   - {fileID: 8266013142560680741, guid: 07f50bf817adc3d4fbef1c83af626f5e, type: 3}
   - {fileID: 2403511166987733123, guid: f1a7ea342e1346741ab56dbe4c52c513, type: 3}
