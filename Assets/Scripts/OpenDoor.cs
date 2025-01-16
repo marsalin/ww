@@ -4,16 +4,17 @@ using UnityEngine.UI;
 
 public class OpenDoor : MonoBehaviour, IInteractable
 {
+    [Header("Wardrobe")]
     public float speed;
+    public GameObject wardrobeObject;
     public GameObject leftDoor;
     public GameObject rightDoor;
     public bool isOpen;
+    public bool openDoor;
     public AudioClip openSound;
     public AudioClip closeSound;
-    public bool openDoor;
     public Collider leftDoorCollider;
     public Collider rightDoorCollider;
-    public GameObject wardrobeObject;
     public Animator animator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -57,7 +58,6 @@ public class OpenDoor : MonoBehaviour, IInteractable
             rightDoorCollider.enabled = true;
         }
     }
-    
     public void Interact()
     {
         DoorSound();

@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     public bool endAnimation;
     public bool playerFinished;
     public bool goMiddleCell;
+    public AudioClip footstepWalk, footstepRugWalk, hitSound, laughSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,6 +43,7 @@ public class Enemy : MonoBehaviour
         middleCellPos = new Vector3(middleCell.x * 8, 0, middleCell.y * 8);
         hitPlayerAnimation = false;
         isTargetable = true;
+        Difficulty();
     }
 
     // Update is called once per frame
@@ -143,6 +145,25 @@ public class Enemy : MonoBehaviour
         hitPlayerAnimation = false;
         return false;
     }
+
+    public void Difficulty()
+    {
+        if (GameManagerInstance.Instance.level == "easy")
+        {
+            viewRange = 20.0f;
+            hearingRange = 4.0f;
+        }
+        else if (GameManagerInstance.Instance.level == "medium")
+        {
+            viewRange = 30.0f;
+            hearingRange = 6.0f;
+        }
+        else if (GameManagerInstance.Instance.level == "hard")
+        {
+            viewRange = 40.0f;
+            hearingRange = 8.0f;
+        }
+    }
     public void Animate()
     {
         float speed = agent.velocity.magnitude;
@@ -201,5 +222,20 @@ public class Enemy : MonoBehaviour
                 player.endGame = false;
             }
         }
+    }
+    public void EnemyFootsteps(AnimationEvent animationevent)
+    {
+        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject);
+    }
+
+    public void HitSound(AnimationEvent animationEvent)
+    {
+        AudioManagerScript.Instance.PlaySound3D(hitSound, transform.position);
+    }
+
+    public void LaughSound(AnimationEvent animationEvent)
+    {
+        float volume = 2.0f;
+        AudioManagerScript.Instance.PlaySound3D(laughSound, transform.position, volume);
     }
 }

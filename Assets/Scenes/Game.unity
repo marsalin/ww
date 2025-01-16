@@ -509,8 +509,8 @@ MonoBehaviour:
   - {fileID: 2403511166987733123, guid: f1a7ea342e1346741ab56dbe4c52c513, type: 3}
   - {fileID: 1730090409446100114, guid: 4ec3c10472e8f1c4fb4ff0b7e3d9404a, type: 3}
   playerPrefab: {fileID: 5670628552269824599, guid: 56eb0a9d424d53647a0875e27dc984ae, type: 3}
-  startRoomPrefab: {fileID: 6378606111422445239, guid: 446311f30e96cc643991ff373a1bcce4, type: 3}
-  endRoomPrefab: {fileID: 625675363263747626, guid: 20a060f7f8907eb499c10bdee4c9f1c3, type: 3}
+  startRoomPrefab: {fileID: 625675363263747626, guid: 20a060f7f8907eb499c10bdee4c9f1c3, type: 3}
+  endRoomPrefab: {fileID: 5551972088226245151, guid: bd497575f0f9b8849879c17470f005c6, type: 3}
   floorPrefab: {fileID: 7171332632284577466, guid: bb65a945cc7397348a4a59fab7366925, type: 3}
   rightFloorPrefab: {fileID: 244695853868075704, guid: 54d1d66ff46c5784881151f9374f7aa0, type: 3}
   downFloorPrefab: {fileID: 8324134297667143758, guid: 8df9664c62f95514ebf6271037b2afd9, type: 3}
@@ -527,6 +527,7 @@ MonoBehaviour:
   entranceCellPos: {x: 0, y: 0}
   exitCellPos: {x: 0, y: 0}
   mazeMiddleCellPos: {x: 0, y: 0}
+  gameMusic: {fileID: 8300000, guid: e93683c9c0a995d48b3f20927db0ac5a, type: 3}
 --- !u!4 &949316945
 Transform:
   m_ObjectHideFlags: 0
@@ -586,6 +587,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a999e0dc12fd843b3568cc4c118c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2041944583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041944585}
+  - component: {fileID: 2041944584}
+  m_Layer: 0
+  m_Name: Audio Reverb Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!167 &2041944584
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041944583}
+  m_Enabled: 1
+  m_MinDistance: 1000
+  m_MaxDistance: 1000
+  m_ReverbPreset: 13
+  m_Room: -1000
+  m_RoomHF: -300
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.59
+  m_Reflections: -1219
+  m_ReflectionsDelay: 0.007
+  m_Reverb: 441
+  m_ReverbDelay: 0.011
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
+--- !u!4 &2041944585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041944583}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.84138, y: -35.77923, z: -16.033634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -597,3 +654,4 @@ SceneRoots:
   - {fileID: 949316945}
   - {fileID: 66063879}
   - {fileID: 1119776465}
+  - {fileID: 2041944585}

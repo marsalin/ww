@@ -21,4 +21,7 @@ public class GameManagerInstance : MonoBehaviour
 
     private static GameManagerInstance instance;
     public int size;
+    public string level;
+    public float minRange;
+    public float maxRange;
 }

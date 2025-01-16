@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("endGame")] public GameObject escapeMenu;
     public GameObject easyDescription, mediumDescription, hardDescription;
     public AudioClip clickSound;
+    public AudioClip menuMusic;
     public Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
             volumeSlider.value = savedVolume;
             volumeSlider.onValueChanged.AddListener(SetVolume);
         }
+        AudioManagerScript.Instance.PlaySound2D(menuMusic);
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
     
     public void StartGame()
     {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
         play.SetActive(true);
     }
 
@@ -51,6 +54,9 @@ public class GameManager : MonoBehaviour
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
         GameManagerInstance.Instance.size = 10;
+        GameManagerInstance.Instance.level = "easy";
+        GameManagerInstance.Instance.minRange = 30.0f;
+        GameManagerInstance.Instance.maxRange = 60.0f;
         SceneManager.LoadScene("Game");
     }
 
@@ -65,7 +71,10 @@ public class GameManager : MonoBehaviour
     public void PlayMedium()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
-        GameManagerInstance.Instance.size = 20;
+        GameManagerInstance.Instance.size = 15;
+        GameManagerInstance.Instance.level = "medium";
+        GameManagerInstance.Instance.minRange = 20.0f;
+        GameManagerInstance.Instance.maxRange = 60.0f;
         SceneManager.LoadScene("Game");
     }
 
@@ -81,7 +90,10 @@ public class GameManager : MonoBehaviour
     public void PlayHard()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
-        GameManagerInstance.Instance.size = 25;
+        GameManagerInstance.Instance.size = 20;
+        GameManagerInstance.Instance.level = "hard";
+        GameManagerInstance.Instance.minRange = 20.0f;
+        GameManagerInstance.Instance.maxRange = 40.0f;
         SceneManager.LoadScene("Game");
     }
 
@@ -118,7 +130,6 @@ public class GameManager : MonoBehaviour
 
     public void SetMinVolume(float volume)
     {
-        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }

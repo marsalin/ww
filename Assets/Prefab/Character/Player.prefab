@@ -6420,11 +6420,12 @@ MonoBehaviour:
   footstepRugWalk: {fileID: 8300000, guid: eea9624d96ae191439615ca598fe01fa, type: 3}
   footstepSprint: {fileID: 8300000, guid: 7f31ac62883f78b4ba610e164f57f879, type: 3}
   footstepRugSprint: {fileID: 8300000, guid: 7ffe843b3b9c8d14792d912d39646105, type: 3}
-  bonecrack: {fileID: 8300000, guid: 207b2ef1191f84ef4b108dd42e852a63, type: 3}
   hasStopped: 0
   exhale: {fileID: 8300000, guid: 35f15ce6f00024747ad5c2eaecd0196c, type: 3}
   breathingSource: {fileID: 0}
   exhaleSource: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 64581012ea1fa934298a780545aaea73, type: 3}
+  gotHitSound: {fileID: 8300000, guid: a0ba4d68ec4260640b0bee855665fa5d, type: 3}
   endGame: 0
 --- !u!143 &2819491662070386202
 CharacterController:
@@ -8722,7 +8723,7 @@ PrefabInstance:
       objectReference: {fileID: 3167126225892586288}
     - target: {fileID: 629317954606262184, guid: 0f6f37814d8118d4a9b973b4d873e3e4, type: 3}
       propertyPath: m_fontSize
-      value: 19.6
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1016883215660473763, guid: 0f6f37814d8118d4a9b973b4d873e3e4, type: 3}
       propertyPath: m_fontSize
@@ -8869,7 +8870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1356907694435359186, guid: 4192ff0253da25540bf2cf03faf5b2b6, type: 3}
       propertyPath: m_fontSize
-      value: 13.4
+      value: 10.7
       objectReference: {fileID: 0}
     - target: {fileID: 2726928675923350354, guid: 4192ff0253da25540bf2cf03faf5b2b6, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
@@ -8921,7 +8922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3567003068168077597, guid: 4192ff0253da25540bf2cf03faf5b2b6, type: 3}
       propertyPath: m_fontSize
-      value: 14.65
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 4382441500837906884, guid: 4192ff0253da25540bf2cf03faf5b2b6, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b

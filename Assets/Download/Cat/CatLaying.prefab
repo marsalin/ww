@@ -1222,3 +1222,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2469529194901987624}
+  catSound: {fileID: 8300000, guid: dcecab7e051673748998c88305850579, type: 3}

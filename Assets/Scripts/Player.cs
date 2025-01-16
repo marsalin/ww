@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
@@ -87,23 +89,15 @@ public class Player : MonoBehaviour
     public AudioClip footstepRugWalk;
     public AudioClip footstepSprint;
     public AudioClip footstepRugSprint;
-    public AudioClip bonecrack;
     public bool hasStopped;
     public AudioClip exhale;
     public AudioSource breathingSource;
     public AudioSource exhaleSource;
-
+    public AudioClip deathSound;
+    public AudioClip gotHitSound;
+    
     [Header("End")] public bool endGame;
     private MenuManager menuManager;
-
-    /*
-     * maze book 27
-     * bible 22
-     * open book 01
-     * book 12 stapel
-     * end animation
-     *
-     */
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -318,6 +312,18 @@ public class Player : MonoBehaviour
         }
     }
 
+    public Vector3 RandomNavMeshPosition(float radius)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere;
+        randomDirection.y = 0;
+        randomDirection.Normalize();
+        randomDirection *= radius;
+        randomDirection += transform.position;
+        Vector3 finalPos = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out NavMeshHit hit, radius, 1))
+            finalPos = hit.position;
+        return finalPos;
+    }
     public void Spawner()
     {
         float gridWidth = 8f;
@@ -333,7 +339,7 @@ public class Player : MonoBehaviour
 
             if (enemyspawnTimer <= 0)
             {
-                Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+                Instantiate(enemyPrefab, RandomNavMeshPosition(Random.Range(GameManagerInstance.Instance.minRange, GameManagerInstance.Instance.maxRange)), Quaternion.identity);
                 spawn = false;
             }
         }
@@ -355,7 +361,8 @@ public class Player : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Wardrobe") || hit.collider.gameObject.CompareTag("Bed") ||
                 hit.collider.gameObject.CompareTag("Radio") || hit.collider.gameObject.CompareTag("Book") ||
                 hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat") ||
-                hit.collider.gameObject.CompareTag("Door") || hit.collider.gameObject.CompareTag("WardrobeDoll"))
+                hit.collider.gameObject.CompareTag("Door") || hit.collider.gameObject.CompareTag("WardrobeDoll") ||
+                hit.collider.gameObject.CompareTag("TV"))
             {
                 pressEText.enabled = true;
             }
@@ -496,15 +503,24 @@ public class Player : MonoBehaviour
 
     public void BreathSound(AudioClip breathingClip)
     {
+        float volume = 0.2f;
         if (breathingSource != null)
             Destroy(breathingSource.gameObject);
-        breathingSource = AudioManagerScript.Instance.PlaySound2D(breathingClip, loop: true);
+        breathingSource = AudioManagerScript.Instance.PlaySound2D(breathingClip, volume, loop: true);
     }
     public void StopBreathSound()
     {
         breathingSource?.Stop();
     }
 
+    public void GotHitSound()
+    {
+        AudioManagerScript.Instance.PlaySound2D(gotHitSound);
+    }
+    public void DeathSound()
+    {
+        AudioManagerScript.Instance.PlaySound2D(deathSound);
+    }
     public void WalkingFootsteps(AnimationEvent animationevent)
     {
         AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject);

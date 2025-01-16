@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3987c0abcc50b084ab6934d3d204f9a0, type: 3}
+      propertyPath: m_TagString
+      value: Trunk
+      objectReference: {fileID: 0}
     - target: {fileID: 4591544607406887143, guid: 3987c0abcc50b084ab6934d3d204f9a0, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -137,6 +141,8 @@ MonoBehaviour:
   isOpen: 0
   openPosition: {x: -90, y: 0, z: 0}
   closePosition: {x: 0, y: 0, z: 0}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
 --- !u!65 &6476283627594201273
 BoxCollider:
   m_ObjectHideFlags: 0

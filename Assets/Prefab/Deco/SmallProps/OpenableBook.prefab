@@ -125,6 +125,8 @@ MonoBehaviour:
   isOpen: 0
   openPosition: {x: 90, y: 0, z: 0}
   closePosition: {x: -90, y: 0, z: 0}
+  openSound: {fileID: 8300000, guid: fa9ed006ad36e2c49bb5dca33b012bfc, type: 3}
+  closeSound: {fileID: 8300000, guid: 709323fca682e4142ad4499347810019, type: 3}
 --- !u!65 &3804065794119512591
 BoxCollider:
   m_ObjectHideFlags: 0

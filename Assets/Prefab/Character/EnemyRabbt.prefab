@@ -167,6 +167,10 @@ MonoBehaviour:
   endAnimation: 0
   playerFinished: 0
   goMiddleCell: 0
+  footstepWalk: {fileID: 8300000, guid: cb9aa4db4b3a12147bf2fe3d88fee270, type: 3}
+  footstepRugWalk: {fileID: 8300000, guid: 8e001351cd7065543a068386cde4c960, type: 3}
+  hitSound: {fileID: 8300000, guid: 40cda279da2faea43ad6582184440a70, type: 3}
+  laughSound: {fileID: 8300000, guid: 5ab29fa4df278d148a1b3add1f66ebd2, type: 3}
 --- !u!195 &2379889545719145646
 NavMeshAgent:
   m_ObjectHideFlags: 0

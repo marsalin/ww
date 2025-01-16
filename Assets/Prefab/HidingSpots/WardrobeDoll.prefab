@@ -67,7 +67,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5527539211237020463, guid: e850afe57717800489e4dea2c550b862, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2340982682146346350}
   m_SourcePrefab: {fileID: 100100000, guid: e850afe57717800489e4dea2c550b862, type: 3}
 --- !u!95 &864966255052208443 stripped
 Animator:
@@ -79,6 +82,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5187604766349527445, guid: e850afe57717800489e4dea2c550b862, type: 3}
   m_PrefabInstance: {fileID: 2581610937904819588}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8027238454130065067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5527539211237020463, guid: e850afe57717800489e4dea2c550b862, type: 3}
+  m_PrefabInstance: {fileID: 2581610937904819588}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2340982682146346350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8027238454130065067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6af9b540f19314882e22afcaf012e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dollSound: {fileID: 8300000, guid: 08b4ba6cd22a9ab4986a13fff034f354, type: 3}
 --- !u!1001 &3013295937225842831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -422,15 +443,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  wardrobeObject: {fileID: 4534021809648695337}
   leftDoor: {fileID: 4534021809648695341}
   rightDoor: {fileID: 4534021809648695343}
   isOpen: 0
+  openDoor: 1
   openSound: {fileID: 8300000, guid: 6cc4537865ae1479b9e7ac12ab172909, type: 3}
   closeSound: {fileID: 8300000, guid: 0210c1127dd754ced9c723f73428cc1c, type: 3}
-  openDoor: 1
   leftDoorCollider: {fileID: 0}
   rightDoorCollider: {fileID: 0}
-  wardrobeObject: {fileID: 4534021809648695337}
   animator: {fileID: 864966255052208443}
 --- !u!64 &2547892286165375611
 MeshCollider:

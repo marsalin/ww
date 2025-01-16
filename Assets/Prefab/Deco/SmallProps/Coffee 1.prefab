@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  drinkSound: {fileID: 8300000, guid: 6d574253198d29348b870dfee5083c64, type: 3}
 --- !u!135 &6800628642877182740
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -46,6 +46,9 @@ public class Maze : MonoBehaviour
     public Vector2Int mazeMiddleCellPos;
     private GameObject player;
     private GameManager gameManager;
+
+    [Header("Audio")]
+    public AudioClip gameMusic;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -165,7 +168,7 @@ public class Maze : MonoBehaviour
         mazeMiddleCellPos = mazeMiddleCell.position;
         
         Vector3 entranceCellWorldPosRoom = new Vector3(entranceCellPos.y * prefabWidth, 0, (entranceCellPos.x * prefabWidth) - prefabWidth);
-        Instantiate(endRoomPrefab, entranceCellWorldPosRoom, Quaternion.identity);
+        Instantiate(startRoomPrefab, entranceCellWorldPosRoom, Quaternion.identity);
         
         exitCellWorldPosRoom = new Vector3(exitCellPos.y * prefabWidth, 0, (exitCellPos.x * prefabWidth) + prefabWidth);
         Quaternion rotate = Quaternion.Euler(0f, 180f, 0f);
@@ -389,7 +392,6 @@ public class Maze : MonoBehaviour
     
     public IEnumerator NavMeshBuilder()
     {
-        //UnityEngine.AI.NavMeshBuilder.UpdateNavMeshDataAsync()
         //navMeshSurface.BuildNavMesh();
         yield return NavMeshOutOfDateCoroutine(Vector3.zero, 2000.0f, true);
         percentage = 90.0f;
@@ -472,6 +474,8 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
         percentage = 99.0f;
         loadingText = "Setting player position...";
         LoadingScreen.Instance.SetPercentage(percentage, loadingText);
+        float volume = 0.5f;
+        AudioManagerScript.Instance.PlaySound2D(gameMusic, volume);
         yield return null;
     }
    

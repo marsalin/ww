@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     public GameObject settings;
     public bool isPaused;
     public AudioClip clickSound;
+    public AudioClip deathscreenSound;
     public Player player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +24,7 @@ public class MenuManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Time.timeScale = 1;
+            AudioManagerScript.Instance.PlaySound2D(deathscreenSound);
         }
     }
 
@@ -83,7 +85,6 @@ public class MenuManager : MonoBehaviour
 
     public void Mute(float volume)
     {
-        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }

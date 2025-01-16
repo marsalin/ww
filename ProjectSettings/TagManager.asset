@@ -28,6 +28,7 @@ TagManager:
   - Cat
   - Door
   - WardrobeDoll
+  - TV
   layers:
   - Default
   - TransparentFX
