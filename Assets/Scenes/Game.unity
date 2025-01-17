@@ -504,6 +504,8 @@ MonoBehaviour:
   - {fileID: 4014370384651053638, guid: 9889707d550d50140b8d82f4c7b01872, type: 3}
   - {fileID: 7270499583627912920, guid: 241c696bfe764c146a39ba0a329ceb5f, type: 3}
   - {fileID: 4534021809648695337, guid: 24bdad8983574934eb54818dd9f51a7a, type: 3}
+  - {fileID: 3165387426392564313, guid: 431f9ff8bc9e92744b54414d33248038, type: 3}
+  - {fileID: 5762717166465893622, guid: 20e31d9cb7dd2b840a60ff8ae2a8dbd2, type: 3}
   decoPrefab:
   - {fileID: 8266013142560680741, guid: 07f50bf817adc3d4fbef1c83af626f5e, type: 3}
   - {fileID: 2403511166987733123, guid: f1a7ea342e1346741ab56dbe4c52c513, type: 3}
@@ -587,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a999e0dc12fd843b3568cc4c118c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpscarePrefab: {fileID: 6857344396585271259, guid: 5a5c42b625417a649ab2c99c81adda3d, type: 3}
 --- !u!1 &2041944583
 GameObject:
   m_ObjectHideFlags: 0

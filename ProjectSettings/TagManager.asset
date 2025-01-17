@@ -29,6 +29,8 @@ TagManager:
   - Door
   - WardrobeDoll
   - TV
+  - TVGlass
+  - LightSwitch
   layers:
   - Default
   - TransparentFX

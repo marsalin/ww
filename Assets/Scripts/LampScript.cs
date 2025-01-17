@@ -7,6 +7,7 @@ public class LampScript : MonoBehaviour
     public float delay = 2.5f;
     public float flickerSpeed = 1.0f;
     public Vector2 flickerRange = new Vector2(5.0f, 7.0f);
+    private Lightswitch lightSwitchScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,18 +17,27 @@ public class LampScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        LightSwitch();
+    }
+
+    public void LightSwitch()
+    {
+        if (!lightSwitchScript.lightOn)
+            lamp.intensity = 0.0f;
+        else
+        {
+            LightFlicker();
+        }
+    }
+    public void LightFlicker()
+    {
         timer += Time.deltaTime;
         if (timer > delay)
         {
-            LightFlicker();
+            float flickerTime = Time.time * flickerSpeed;
+            lamp.intensity = Map(Mathf.PerlinNoise(flickerTime, 0), 0.0f,1.0f, flickerRange.x, flickerRange.y);
             timer = 0;
         }
-    }
-
-    public void LightFlicker()
-    {
-        float flickerTime = Time.time * flickerSpeed;
-        lamp.intensity = Map(Mathf.PerlinNoise(flickerTime, 0), 0.0f,1.0f, flickerRange.x, flickerRange.y);
     }
     
     float Map(float value, float oldMin, float oldMax, float newMin, float newMax)

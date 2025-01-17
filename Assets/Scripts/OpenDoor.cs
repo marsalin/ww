@@ -62,7 +62,7 @@ public class OpenDoor : MonoBehaviour, IInteractable
     {
         DoorSound();
         isOpen = !isOpen;
-        if (wardrobeObject.tag == "WardrobeDoll")
+        if (wardrobeObject.CompareTag("WardrobeDoll"))
         {
             if (isOpen)
                 animator.SetBool("Doll", true);

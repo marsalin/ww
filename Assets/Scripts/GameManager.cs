@@ -1,3 +1,5 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -13,7 +15,15 @@ public class GameManager : MonoBehaviour
     public GameObject easyDescription, mediumDescription, hardDescription;
     public AudioClip clickSound;
     public AudioClip menuMusic;
+    public AudioClip enemySound;
     public Animator animator;
+    
+    [Header("Jumpscare")]
+    [FormerlySerializedAs("jumpScareObject")] public GameObject jumpScarePrefab;
+    public TMP_Text jumpscareText;
+    public Button jumpscareButton;
+    public float timer = 2.0f;
+    public float jumpscareTimer = 10.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +40,7 @@ public class GameManager : MonoBehaviour
             volumeSlider.value = savedVolume;
             volumeSlider.onValueChanged.AddListener(SetVolume);
         }
-        AudioManagerScript.Instance.PlaySound2D(menuMusic);
+        AudioManagerScript.Instance.PlaySound2D(menuMusic, loop: true);
     }
 
     // Update is called once per frame
@@ -39,9 +49,28 @@ public class GameManager : MonoBehaviour
         Escape();
     }
 
+    public void DoJumpScare()
+    {
+        StartCoroutine(JumpScare());
+    }
+    public IEnumerator JumpScare()
+    {
+        jumpscareText.text = "Nice job!";
+        jumpscareButton.interactable = false;
+        while (jumpscareTimer > 0)
+        {
+            jumpscareTimer -= Time.deltaTime;
+            yield return null;
+        }
+        Instantiate(jumpScarePrefab);
+        jumpscareText.text = "Click here";
+        jumpscareButton.interactable = true;
+        jumpscareTimer = 5.0f;
+    }
     public void Animate()
     {
         animator.SetTrigger("Animate");
+        AudioManagerScript.Instance.PlaySound2D(enemySound);
     }
     
     public void StartGame()

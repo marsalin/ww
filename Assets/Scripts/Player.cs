@@ -97,6 +97,7 @@ public class Player : MonoBehaviour
     public AudioClip gotHitSound;
     
     [Header("End")] public bool endGame;
+    public GameObject endGameObject;
     private MenuManager menuManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -110,6 +111,7 @@ public class Player : MonoBehaviour
         pressEText.enabled = false;
         vignette.SetActive(false);
         deathVignette.SetActive(false);
+        endGameObject.SetActive(false);
         BreathSound(breathWalk);
         lastPlayerRotation = transform.rotation.eulerAngles;
     }
@@ -311,7 +313,6 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
-
     public Vector3 RandomNavMeshPosition(float radius)
     {
         Vector3 randomDirection = Random.insideUnitSphere;
@@ -362,7 +363,7 @@ public class Player : MonoBehaviour
                 hit.collider.gameObject.CompareTag("Radio") || hit.collider.gameObject.CompareTag("Book") ||
                 hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat") ||
                 hit.collider.gameObject.CompareTag("Door") || hit.collider.gameObject.CompareTag("WardrobeDoll") ||
-                hit.collider.gameObject.CompareTag("TV"))
+                hit.collider.gameObject.CompareTag("TV") || hit.collider.gameObject.CompareTag("LightSwitch"))
             {
                 pressEText.enabled = true;
             }

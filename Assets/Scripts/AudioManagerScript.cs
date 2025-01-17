@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class AudioManagerScript : MonoBehaviour
 {
+    public GameObject jumpscarePrefab;
     public static AudioManagerScript Instance;
    
     void Awake()
@@ -53,5 +55,20 @@ public class AudioManagerScript : MonoBehaviour
         if (audioSource == null) return null;
         audioSource.gameObject.transform.parent = parent;
         return audioSource;
+    }
+
+    private void SpawnJumpScare()
+    {
+        Instantiate(jumpscarePrefab);
+    }
+    static bool canQuit()
+    {
+        Instance.SpawnJumpScare();
+        return false;
+    }
+    [RuntimeInitializeOnLoadMethod]
+    static void RunOnStart()
+    {
+        Application.wantsToQuit += canQuit;
     }
 }

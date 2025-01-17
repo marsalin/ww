@@ -206,7 +206,7 @@ public class Maze : MonoBehaviour
                         Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
-                    int random = Random.Range(0, 3);
+                    int random = Random.Range(0, 2);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -251,7 +251,7 @@ public class Maze : MonoBehaviour
                         Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
-                    int random = Random.Range(0, 3);
+                    int random = Random.Range(0, 2);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -302,7 +302,7 @@ public class Maze : MonoBehaviour
                         Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
-                    int random = Random.Range(0, 3);
+                    int random = Random.Range(0, 2);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);
@@ -346,7 +346,7 @@ public class Maze : MonoBehaviour
                         Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
                     }
                     
-                    int random = Random.Range(0, 3);
+                    int random = Random.Range(0, 2);
                     if (random == 0)
                     {
                         int randomFurniture = Random.Range(0, furniturePrefab.Length);

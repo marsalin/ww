@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
@@ -39,6 +42,15 @@ public class MenuManager : MonoBehaviour
                 Escape();
             }  
         }
+        if (player.endGame)
+            Finished();
+    }
+    public void Finished()
+    {
+        player.endGameObject.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        player.enabled = false;
     }
     
     public void Escape()
@@ -117,6 +129,10 @@ public class MenuManager : MonoBehaviour
         AudioManagerScript.Instance.PlaySound2D(clickSound);
         escapeObject.SetActive(true);
         settings.SetActive(false);
+    }
+    public void Click()
+    {
+        AudioManagerScript.Instance.PlaySound2D(clickSound);
     }
     public void EndGame()
     {
