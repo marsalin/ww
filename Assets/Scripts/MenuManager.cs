@@ -27,7 +27,8 @@ public class MenuManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Time.timeScale = 1;
-            AudioManagerScript.Instance.PlaySound2D(deathscreenSound);
+            float musicVolume = 0.3f;
+            AudioManagerScript.Instance.PlaySound2D(deathscreenSound, musicVolume, loop: true);
         }
     }
 

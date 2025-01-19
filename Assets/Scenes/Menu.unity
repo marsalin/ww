@@ -1432,8 +1432,8 @@ MonoBehaviour:
   jumpScarePrefab: {fileID: 6857344396585271259, guid: 5a5c42b625417a649ab2c99c81adda3d, type: 3}
   jumpscareText: {fileID: 788423769}
   jumpscareButton: {fileID: 2083434961}
-  timer: 2
-  jumpscareTimer: 5
+  timer: 1.5
+  jumpscareTimer: 2.5
 --- !u!1 &1004935688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,7 +1653,6 @@ GameObject:
   - component: {fileID: 1300625232}
   - component: {fileID: 1300625235}
   - component: {fileID: 1300625234}
-  - component: {fileID: 1300625233}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -1676,23 +1675,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1826036559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1300625233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300625231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a86c688265902244a5df7701331b9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lamp: {fileID: 1300625235}
-  timer: 0
-  delay: 0.5
-  flickerSpeed: 1
-  flickerRange: {x: 5, y: 7}
 --- !u!114 &1300625234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,7 +1865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Name'
+  m_text: Whispering walls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -1892,8 +1874,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280558710
-  m_fontColor: {r: 0.46226418, g: 0.14173195, b: 0.14173195, a: 1}
+    rgba: 4279703351
+  m_fontColor: {r: 0.21698111, g: 0.091091126, b: 0.091091126, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1910,12 +1892,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 127.7
+  m_fontSize: 125.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 150
+  m_fontSizeMax: 300
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -1996,8 +1978,8 @@ RectTransform:
   - {fileID: 1371070490}
   m_Father: {fileID: 2065003594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.05, y: 0.73742056}
-  m_AnchorMax: {x: 0.23105407, y: 0.9111112}
+  m_AnchorMin: {x: 0.06882643, y: 0.7394992}
+  m_AnchorMax: {x: 0.6361765, y: 0.90961915}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

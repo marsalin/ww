@@ -363,7 +363,8 @@ public class Player : MonoBehaviour
                 hit.collider.gameObject.CompareTag("Radio") || hit.collider.gameObject.CompareTag("Book") ||
                 hit.collider.gameObject.CompareTag("Trunk") || hit.collider.gameObject.CompareTag("Cat") ||
                 hit.collider.gameObject.CompareTag("Door") || hit.collider.gameObject.CompareTag("WardrobeDoll") ||
-                hit.collider.gameObject.CompareTag("TV") || hit.collider.gameObject.CompareTag("LightSwitch"))
+                hit.collider.gameObject.CompareTag("TV") || hit.collider.gameObject.CompareTag("LightSwitch") ||
+                hit.collider.gameObject.CompareTag("Frame"))
             {
                 pressEText.enabled = true;
             }

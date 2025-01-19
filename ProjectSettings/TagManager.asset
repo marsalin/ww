@@ -31,6 +31,7 @@ TagManager:
   - TV
   - TVGlass
   - LightSwitch
+  - Frame
   layers:
   - Default
   - TransparentFX

@@ -40,7 +40,8 @@ public class GameManager : MonoBehaviour
             volumeSlider.value = savedVolume;
             volumeSlider.onValueChanged.AddListener(SetVolume);
         }
-        AudioManagerScript.Instance.PlaySound2D(menuMusic, loop: true);
+        float musicVolume = 0.3f;
+        AudioManagerScript.Instance.PlaySound2D(menuMusic, musicVolume, loop: true);
     }
 
     // Update is called once per frame
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
         Instantiate(jumpScarePrefab);
         jumpscareText.text = "Click here";
         jumpscareButton.interactable = true;
-        jumpscareTimer = 5.0f;
+        jumpscareTimer = 2.5f;
     }
     public void Animate()
     {

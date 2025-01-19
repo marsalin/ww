@@ -155,9 +155,9 @@ MonoBehaviour:
     m_Bits: 193
   playerFound: 0
   hitPlayerAnimation: 0
-  hitRangeAnimation: 3
+  hitRangeAnimation: 2.5
   hitPlayer: 0
-  hitPlayerRange: 3
+  hitPlayerRange: 2.5
   timer: 1
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5

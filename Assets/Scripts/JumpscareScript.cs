@@ -19,7 +19,8 @@ public class JumpscareScript : MonoBehaviour
 
     public IEnumerator Jumpscare()
     {
-        AudioManagerScript.Instance.PlaySound2D(jumpscareSound);
+        float soundVolume = 1.0f;
+        AudioManagerScript.Instance.PlaySound2D(jumpscareSound, soundVolume);
         while (timer > 0)
         {
             timer -= Time.deltaTime;

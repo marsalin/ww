@@ -7,13 +7,13 @@ public class LampScript : MonoBehaviour
     public float delay = 2.5f;
     public float flickerSpeed = 1.0f;
     public Vector2 flickerRange = new Vector2(5.0f, 7.0f);
-    private Lightswitch lightSwitchScript;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Lightswitch lightswitch;
+
     void Start()
     {
-        
+        if (lightswitch == null)
+            lightswitch = GameObject.Find("LightSwitch").GetComponent<Lightswitch>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -22,12 +22,10 @@ public class LampScript : MonoBehaviour
 
     public void LightSwitch()
     {
-        if (!lightSwitchScript.lightOn)
+        if (!lightswitch.lightOn)
             lamp.intensity = 0.0f;
         else
-        {
             LightFlicker();
-        }
     }
     public void LightFlicker()
     {

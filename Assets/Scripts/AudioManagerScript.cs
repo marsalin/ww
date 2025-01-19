@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -25,7 +26,7 @@ public class AudioManagerScript : MonoBehaviour
         }
     }
 
-    public AudioSource PlaySound2D(AudioClip audioClip, float volume = 1.0f, float pitch = 1.0f, bool loop = false)
+    public AudioSource PlaySound2D(AudioClip audioClip, float volume = 0.3f, float pitch = 1.0f, bool loop = false)
     {
         if (audioClip == null) return null;
         GameObject clickSoundObject = new GameObject($"Sound_{audioClip.name}");
@@ -40,7 +41,7 @@ public class AudioManagerScript : MonoBehaviour
         return source;
     }
 
-    public AudioSource PlaySound3D(AudioClip audioClip, Vector3 position, float volume = 1.0f, float pitch = 1.0f, bool loop = false)
+    public AudioSource PlaySound3D(AudioClip audioClip, Vector3 position, float volume = 0.3f, float pitch = 1.0f, bool loop = false)
     {
         AudioSource source = PlaySound2D(audioClip, volume, pitch, loop);
         if (source == null) return null;
