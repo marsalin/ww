@@ -101,6 +101,10 @@ public class Player : MonoBehaviour
     public GameObject endGameObject;
     private MenuManager menuManager;
 
+    void Awake()
+    {
+        endGameObject.SetActive(false);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -112,7 +116,6 @@ public class Player : MonoBehaviour
         pressEText.enabled = false;
         vignette.SetActive(false);
         deathVignette.SetActive(false);
-        endGameObject.SetActive(false);
         BreathSound(breathWalk);
         lastPlayerRotation = transform.rotation.eulerAngles;
     }
@@ -312,6 +315,9 @@ public class Player : MonoBehaviour
         {
             endGame = true;
             Destroy(other.gameObject);
+            endGameObject.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            canMove = false;
         }
         else if (other.CompareTag("WardrobeCheck"))
             inWardrobe = true;

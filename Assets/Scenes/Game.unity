@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ca146b11156846e4ea6a3d0995cd5a68, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -512,7 +512,7 @@ MonoBehaviour:
   - {fileID: 1730090409446100114, guid: 4ec3c10472e8f1c4fb4ff0b7e3d9404a, type: 3}
   playerPrefab: {fileID: 5670628552269824599, guid: 56eb0a9d424d53647a0875e27dc984ae, type: 3}
   startRoomPrefab: {fileID: 625675363263747626, guid: 20a060f7f8907eb499c10bdee4c9f1c3, type: 3}
-  endRoomPrefab: {fileID: 5551972088226245151, guid: bd497575f0f9b8849879c17470f005c6, type: 3}
+  endRoomPrefab: {fileID: 3413974886717747440, guid: fec9a880a0b29664fa69d24026cb77ee, type: 3}
   floorPrefab: {fileID: 7171332632284577466, guid: bb65a945cc7397348a4a59fab7366925, type: 3}
   rightFloorPrefab: {fileID: 244695853868075704, guid: 54d1d66ff46c5784881151f9374f7aa0, type: 3}
   downFloorPrefab: {fileID: 8324134297667143758, guid: 8df9664c62f95514ebf6271037b2afd9, type: 3}
@@ -590,6 +590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpscarePrefab: {fileID: 6857344396585271259, guid: 5a5c42b625417a649ab2c99c81adda3d, type: 3}
+  hearingSomething: 0
 --- !u!1 &2041944583
 GameObject:
   m_ObjectHideFlags: 0
