@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
       propertyPath: m_TagString
-      value: WardrobeDoll
+      value: Wardrobe
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -445,7 +445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  wardrobeObject: {fileID: 5762717166465893622}
   leftDoor: {fileID: 5762717166465893618}
   rightDoor: {fileID: 5762717166465893616}
   isOpen: 0

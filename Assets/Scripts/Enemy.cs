@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
     [FormerlySerializedAs("hitPlayer")] public bool hitPlayerAnimation;
     [FormerlySerializedAs("hitRange")] public float hitRangeAnimation;
     public bool hitPlayer;
-    public float hitPlayerRange;
     public float timer = 8f;
     public Vector3 lastPlayerPos;
     public float snapDistance;
@@ -31,6 +30,9 @@ public class Enemy : MonoBehaviour
     public bool playerFinished;
     public bool goMiddleCell;
     public AudioClip footstepWalk, footstepRugWalk, hitSound, laughSound;
+    public AudioClip[] randomSounds;
+    public float soundTimer;
+    private AudioSource randomSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,6 +55,7 @@ public class Enemy : MonoBehaviour
         FollowPlayer();
         Animate();
         PlayerFinishedLevel();
+        RandomSounds();
         
         if (goMiddleCell)
             agent.destination = middleCellPos;
@@ -83,9 +86,18 @@ public class Enemy : MonoBehaviour
         return finalPos;
     }
 
+    public void RandomSounds()
+    {
+        soundTimer -= Time.deltaTime;
+        if (soundTimer <= 0)
+        {
+            randomSource = AudioManagerScript.Instance.PlaySound3D(randomSounds[Random.Range(0, randomSounds.Length)], RandomNavMeshPosition(15));
+            soundTimer = 20.0f;
+        }
+    }
     public void FollowPlayer()
     {
-        if (playerFound && !playerFinished)
+        if ((playerFound || AudioManagerScript.Instance.hearingSomething) && !playerFinished)
         {
             Vector3 snappedPos;
             if (SnapPosition(player.transform.position, snapDistance, out snappedPos))
@@ -128,14 +140,18 @@ public class Enemy : MonoBehaviour
 
     public bool FindPlayer() 
     {
+        PlayerInWardrobe();
         if (Vector3.Distance(transform.position, player.transform.position) <= viewRange)
         {
             Vector3 playerDirection = (player.transform.position - transform.position).normalized;
             RaycastHit hit;
             if (Physics.Raycast(transform.position + transform.up, playerDirection, out hit, viewRange, playerLayer))
             {
-                if (hit.collider.gameObject.GetComponent<Player>() != null)
+                Debug.DrawRay(transform.position + transform.up, playerDirection * hit.distance, Color.yellow);
+                if (hit.collider.gameObject.GetComponent<Player>() != null || (player.inWardrobe))
                 {
+                    Quaternion targetRotation = Quaternion.LookRotation(playerDirection, Vector3.up);
+                    transform.rotation = targetRotation;
                     if (Vector3.Distance(transform.position, player.transform.position) <= hitRangeAnimation)
                         hitPlayerAnimation = true;
                     return true;
@@ -146,6 +162,13 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
+    public void PlayerInWardrobe()
+    {
+        if (player.inWardrobe)
+            hitRangeAnimation = 3.0f;
+        else
+            hitRangeAnimation = 2.5f;
+    }
     public void Difficulty()
     {
         if (GameManagerInstance.Instance.level == "easy")
@@ -175,7 +198,7 @@ public class Enemy : MonoBehaviour
     
     public void AttackEvent(AnimationEvent animationEvent) 
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= hitPlayerRange)
+        if (Vector3.Distance(transform.position, player.transform.position) <= hitRangeAnimation)
         {
             player.playerHealth--;
             player.playerHealth = Mathf.Clamp(player.playerHealth, 0, 2);

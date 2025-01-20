@@ -218,7 +218,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
+  m_fontSize: 56.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1793,6 +1793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpscarePrefab: {fileID: 6857344396585271259, guid: 5a5c42b625417a649ab2c99c81adda3d, type: 3}
+  hearingSomething: 0
 --- !u!4 &1326126555
 Transform:
   m_ObjectHideFlags: 0
@@ -1874,8 +1875,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279703351
-  m_fontColor: {r: 0.21698111, g: 0.091091126, b: 0.091091126, a: 1}
+    rgba: 4280427351
+  m_fontColor: {r: 0.33962262, g: 0.13897403, b: 0.13296545, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1892,7 +1893,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 125.1
+  m_fontSize: 125.15
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

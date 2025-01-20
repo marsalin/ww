@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +7,6 @@ public class OpenDoor : MonoBehaviour, IInteractable
 {
     [Header("Wardrobe")]
     public float speed;
-    public GameObject wardrobeObject;
     public GameObject leftDoor;
     public GameObject rightDoor;
     public bool isOpen;
@@ -61,8 +61,9 @@ public class OpenDoor : MonoBehaviour, IInteractable
     public void Interact()
     {
         DoorSound();
+        StartCoroutine(AudioManagerScript.Instance.HearingSomething());
         isOpen = !isOpen;
-        if (wardrobeObject.CompareTag("WardrobeDoll"))
+        if (gameObject.CompareTag("WardrobeDoll"))
         {
             if (isOpen)
                 animator.SetBool("Doll", true);

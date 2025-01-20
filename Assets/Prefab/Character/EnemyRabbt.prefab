@@ -157,7 +157,6 @@ MonoBehaviour:
   hitPlayerAnimation: 0
   hitRangeAnimation: 2.5
   hitPlayer: 0
-  hitPlayerRange: 2.5
   timer: 1
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5
@@ -171,6 +170,13 @@ MonoBehaviour:
   footstepRugWalk: {fileID: 8300000, guid: 8e001351cd7065543a068386cde4c960, type: 3}
   hitSound: {fileID: 8300000, guid: 40cda279da2faea43ad6582184440a70, type: 3}
   laughSound: {fileID: 8300000, guid: 5ab29fa4df278d148a1b3add1f66ebd2, type: 3}
+  randomSounds:
+  - {fileID: 8300000, guid: 57f5f9fc49e59cb4ca4ae0d069d09f33, type: 3}
+  - {fileID: 8300000, guid: 727c90cef4c97c545a8860dda29b53b1, type: 3}
+  - {fileID: 8300000, guid: 539e54c3a324c7341a61c6edde66d718, type: 3}
+  - {fileID: 8300000, guid: 46cee7ba3d0514a49b52cc081ad6ca85, type: 3}
+  - {fileID: 8300000, guid: 0045f76525dcdd34dbf31cb4fa3563a5, type: 3}
+  soundTimer: 20
 --- !u!195 &2379889545719145646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -181,7 +187,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

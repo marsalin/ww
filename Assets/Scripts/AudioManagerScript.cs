@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -7,6 +8,7 @@ using UnityEngine.UI;
 public class AudioManagerScript : MonoBehaviour
 {
     public GameObject jumpscarePrefab;
+    public bool hearingSomething;
     public static AudioManagerScript Instance;
    
     void Awake()
@@ -58,6 +60,12 @@ public class AudioManagerScript : MonoBehaviour
         return audioSource;
     }
 
+    public IEnumerator HearingSomething()
+    {
+        hearingSomething = true;
+        yield return new WaitForSeconds(8.0f);
+        hearingSomething = false;
+    }
     private void SpawnJumpScare()
     {
         Instantiate(jumpscarePrefab);

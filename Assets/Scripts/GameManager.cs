@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
         GameManagerInstance.Instance.size = 10;
         GameManagerInstance.Instance.level = "easy";
         GameManagerInstance.Instance.minRange = 30.0f;
-        GameManagerInstance.Instance.maxRange = 60.0f;
+        GameManagerInstance.Instance.maxRange = 50.0f;
         SceneManager.LoadScene("Game");
     }
 
@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
         GameManagerInstance.Instance.size = 15;
         GameManagerInstance.Instance.level = "medium";
         GameManagerInstance.Instance.minRange = 20.0f;
-        GameManagerInstance.Instance.maxRange = 60.0f;
+        GameManagerInstance.Instance.maxRange = 50.0f;
         SceneManager.LoadScene("Game");
     }
 

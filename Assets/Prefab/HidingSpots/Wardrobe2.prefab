@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
       propertyPath: m_TagString
-      value: WardrobeDoll
+      value: Wardrobe
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  wardrobeObject: {fileID: 3165387426392564313}
   leftDoor: {fileID: 3165387426392564317}
   rightDoor: {fileID: 3165387426392564319}
   isOpen: 0
@@ -281,8 +280,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0049631055, y: 0.014747836, z: 0.00028785196}
-  m_Center: {x: -0.0024427637, y: 0.0014915692, z: -0.000011060685}
+  m_Size: {x: 0.0051368806, y: 0.014747836, z: 0.00028785196}
+  m_Center: {x: -0.0025296514, y: 0.0014915692, z: -0.000011060687}
 --- !u!1 &3165387426392564319 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}

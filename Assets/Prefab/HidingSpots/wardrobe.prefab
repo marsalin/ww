@@ -60,8 +60,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 0.7700851}
+  m_Center: {x: 0, y: 0, z: -0.079157166}
 --- !u!1001 &3314085701446421251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,8 +298,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0049631055, y: 0.014747836, z: 0.00028785196}
-  m_Center: {x: -0.0024427637, y: 0.0014915692, z: -0.000011060685}
+  m_Size: {x: 0.0051700324, y: 0.014747836, z: 0.00028785196}
+  m_Center: {x: -0.002546227, y: 0.0014915692, z: -0.000011060687}
 --- !u!1 &3314085701446520231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 21ef6551c3751344e80409de0a727bbc, type: 3}
@@ -348,12 +348,11 @@ MonoBehaviour:
   leftDoor: {fileID: 3314085701446520227}
   rightDoor: {fileID: 3314085701446520225}
   isOpen: 0
+  openDoor: 1
   openSound: {fileID: 8300000, guid: 6cc4537865ae1479b9e7ac12ab172909, type: 3}
   closeSound: {fileID: 8300000, guid: 0210c1127dd754ced9c723f73428cc1c, type: 3}
-  openDoor: 1
-  leftDoorCollider: {fileID: 0}
-  rightDoorCollider: {fileID: 0}
-  wardrobeObject: {fileID: 3314085701446520231}
+  leftDoorCollider: {fileID: 6759315124545588841}
+  rightDoorCollider: {fileID: 7350372523177924891}
   animator: {fileID: 0}
 --- !u!64 &1500093639959408113
 MeshCollider:

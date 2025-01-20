@@ -193,42 +193,95 @@ public class Maze : MonoBehaviour
                 {
                     if (i % 3 == 0)
                     {
-                        int randomWallLamp = Random.Range(0, 2);
+                        int randomWallLamp = Random.Range(0, wallLampPrefab.Length);
                         Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
                         Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
+
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            int randomFurniture = Random.Range(0, 3);
+                            Vector3 cellWarPos = new Vector3((j * prefabWidth) + 1, 0, i * prefabWidth);
+                            Vector3 furniturePos = cellWarPos + (-Vector3.right * prefabWidth / 2f);
+                            Quaternion rot = Quaternion.Euler(0f, 90f, 0f);
+                            Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        
+                            int randomDecoSpawn = Random.Range(0, 2);
+                            if (randomDecoSpawn == 0 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
+                            else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }  
+                        }
                     }
                     else
                     {
-                        int randomLamp = Random.Range(0, 2);
+                        int randomWall = Random.Range(0, wallPrefab.Length);
                         Vector3 wallPos = cellPos + (-Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 0f, 0f);
-                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
-                    }
-                    
-                    int random = Random.Range(0, 2);
-                    if (random == 0)
-                    {
-                        int randomFurniture = Random.Range(0, furniturePrefab.Length);
-                        Vector3 cellWarPos = new Vector3((j * prefabWidth) + 1, 0, i * prefabWidth);
-                        Vector3 furniturePos = cellWarPos + (-Vector3.right * prefabWidth / 2f);
-                        Quaternion rot = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        Instantiate(wallPrefab[randomWall], wallPos, rotation, transform);
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            int randomSpawnside = Random.Range(0, 2);
+                            if (randomSpawnside == 0)
+                            {
+                                int randomFurniture = Random.Range(0, furniturePrefab.Length);
+                                Vector3 cellWarPos = new Vector3((j * prefabWidth) + 1, 0, i * prefabWidth);
+                                Vector3 furniturePos = cellWarPos + (-Vector3.right * prefabWidth / 2f);
+                                Quaternion rot = Quaternion.Euler(0f, 90f, 0f);
+                                Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
-                        int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
-                        }
-                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                int randomDecoSpawn = Random.Range(0, 2);
+                                if (randomDecoSpawn == 0 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                                else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }  
+                            }
+                            else if (randomSpawnside == 1 && j != 0)
+                            {
+                                int randomFurniture = Random.Range(0, furniturePrefab.Length);
+                                Vector3 cellWarPos = new Vector3((j * prefabWidth) - 1, 0, i * prefabWidth);
+                                Vector3 furniturePos = cellWarPos + (-Vector3.right * prefabWidth / 2f);
+                                Quaternion rot = Quaternion.Euler(0f, -90f, 0f);
+                                Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        
+                                int randomDecoSpawn = Random.Range(0, 2);
+                                if (randomDecoSpawn == 0 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                                else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }  
+                            }
                         }
                     }
                 }
@@ -237,43 +290,42 @@ public class Maze : MonoBehaviour
                 {
                     if (i % 3 == 0)
                     {
-                        int randomWallLamp = Random.Range(0, 2);
+                        int randomWallLamp = Random.Range(0, wallLampPrefab.Length);
                         Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
                         Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
-                    
                     else
                     {
-                        int randomLamp = Random.Range(0, 2);
+                        int randomWall = Random.Range(0, wallPrefab.Length);
                         Vector3 wallPos = cellPos + (Vector3.right * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 180f, 0f);
-                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
-                    }
-                    
-                    int random = Random.Range(0, 2);
-                    if (random == 0)
-                    {
-                        int randomFurniture = Random.Range(0, furniturePrefab.Length);
-                        Vector3 cellWarPos = new Vector3((j * prefabWidth) - 1, 0, i * prefabWidth);
-                        Vector3 furniturePos = cellWarPos + (Vector3.right * prefabWidth / 2f);
-                        Quaternion rot = Quaternion.Euler(0f, -90f, 0f);
-                        Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        Instantiate(wallPrefab[randomWall], wallPos, rotation, transform);
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            
+                            int randomFurniture = Random.Range(0, furniturePrefab.Length); 
+                            Vector3 cellWarPos = new Vector3((j * prefabWidth) - 1, 0, i * prefabWidth);
+                            Vector3 furniturePos = cellWarPos + (Vector3.right * prefabWidth / 2f);
+                            Quaternion rot = Quaternion.Euler(0f, -90f, 0f);
+                            Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
-                        int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
-                        }
-                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            int randomDecoSpawn = Random.Range(0, 2);
+                            if (randomDecoSpawn == 0 && randomFurniture != 5)
+                            { 
+                                int randomDeco = Random.Range(0, decoPrefab.Length); 
+                                Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z - 2); 
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f); 
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
+                            else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                            { 
+                                int randomDeco = Random.Range(0, decoPrefab.Length); 
+                                Vector3 decoPos = new Vector3(furniturePos.x, furniturePos.y, furniturePos.z + 2); 
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f); 
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
                         }
                     }
                 }
@@ -282,49 +334,101 @@ public class Maze : MonoBehaviour
                 {
                     if (j % 2 == 0)
                     {
-                        int randomWallLamp = Random.Range(0, 2);
+                        int randomWallLamp = Random.Range(0, wallLampPrefab.Length);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
                         Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            int  randomFurniture = Random.Range(0, furniturePrefab.Length);
+                            Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth) + 1);
+                            Vector3 furniturePos = cellWarPos + (-Vector3.forward * prefabWidth / 2f);
+                            Quaternion rot = Quaternion.Euler(0f, 0f, 0f);
+                            Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        
+                            int randomDecoSpawn = Random.Range(0, 2);
+                            if (randomDecoSpawn == 0 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
+                            else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
+                        }
                     }
                     else if (j % 5 == 0)
                     {
-                        int randomWallLamp = Random.Range(0, 2);
+                        int randomWallLamp = Random.Range(0, wallLampPrefab.Length);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
                         Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else
                     {
-                        int randomLamp = Random.Range(0, 2);
+                        int randomWall = Random.Range(0, wallPrefab.Length);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
-                    }
-                    
-                    int random = Random.Range(0, 2);
-                    if (random == 0)
-                    {
-                        int randomFurniture = Random.Range(0, furniturePrefab.Length);
-                        Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth) + 1);
-                        Vector3 furniturePos = cellWarPos + (-Vector3.forward * prefabWidth / 2f);
-                        Quaternion rot = Quaternion.Euler(0f, 0f, 0f);
-                        Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        Instantiate(wallPrefab[randomWall], wallPos, rotation, transform);
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            int randomSpawnside = Random.Range(0, 2);
+                            if (randomSpawnside == 0)
+                            {
+                                int  randomFurniture = Random.Range(0, furniturePrefab.Length);
+                                Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth) + 1);
+                                Vector3 furniturePos = cellWarPos + (-Vector3.forward * prefabWidth / 2f);
+                                Quaternion rot = Quaternion.Euler(0f, 0f, 0f);
+                                Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
-                        int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
-                        }
-                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                int randomDecoSpawn = Random.Range(0, 2);
+                                if (randomDecoSpawn == 0 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                                else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                            }
+                            else if (randomSpawnside == 1 && i != 0)
+                            {
+                                int  randomFurniture = Random.Range(0, furniturePrefab.Length);
+                                Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth) - 1);
+                                Vector3 furniturePos = cellWarPos + (-Vector3.forward * prefabWidth / 2f);
+                                Quaternion rot = Quaternion.Euler(0f, 180f, 0f);
+                                Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        
+                                int randomDecoSpawn = Random.Range(0, 2);
+                                if (randomDecoSpawn == 0 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                                else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                                {
+                                    int randomDeco = Random.Range(0, decoPrefab.Length);
+                                    Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
+                                    Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, -90.0f), 0f);
+                                    Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                                }
+                            }
                         }
                     }
                 }
@@ -333,42 +437,41 @@ public class Maze : MonoBehaviour
                 {
                     if (j % 3 == 0)
                     {
-                        int randomWallLamp = Random.Range(0, 2);
+                        int randomWallLamp = Random.Range(0, wallLampPrefab.Length);
                         Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
                         Instantiate(wallLampPrefab[randomWallLamp], wallPos, rotation, transform);
                     }
                     else
                     {
-                        int randomLamp = Random.Range(0, 2);
+                        int randomWall = Random.Range(0, wallPrefab.Length);
                         Vector3 wallPos = cellPos + (Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        Instantiate(wallPrefab[randomLamp], wallPos, rotation, transform);
-                    }
-                    
-                    int random = Random.Range(0, 2);
-                    if (random == 0)
-                    {
-                        int randomFurniture = Random.Range(0, furniturePrefab.Length);
-                        Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth - 1));
-                        Vector3 furniturePos = cellWarPos + (Vector3.forward * prefabWidth / 2f);
-                        Quaternion rot = Quaternion.Euler(0f, 180f, 0f);
-                        Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
+                        Instantiate(wallPrefab[randomWall], wallPos, rotation, transform);
+                        int random = Random.Range(0, 2);
+                        if (random == 0)
+                        {
+                            int randomFurniture = Random.Range(0, furniturePrefab.Length);
+                            Vector3 cellWarPos = new Vector3((j * prefabWidth), 0, (i * prefabWidth - 1));
+                            Vector3 furniturePos = cellWarPos + (Vector3.forward * prefabWidth / 2f);
+                            Quaternion rot = Quaternion.Euler(0f, 180f, 0f);
+                            Instantiate(furniturePrefab[randomFurniture], furniturePos, rot, transform);
                         
-                        int randomDecoSpawn = Random.Range(0, 2);
-                        if (randomDecoSpawn == 0 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
-                        }
-                        else if (randomDecoSpawn == 1 && randomFurniture != 5)
-                        {
-                            int randomDeco = Random.Range(0, decoPrefab.Length);
-                            Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
-                            Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
-                            Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            int randomDecoSpawn = Random.Range(0, 2);
+                            if (randomDecoSpawn == 0 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x + 2, furniturePos.y, furniturePos.z);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
+                            else if (randomDecoSpawn == 1 && randomFurniture != 5)
+                            {
+                                int randomDeco = Random.Range(0, decoPrefab.Length);
+                                Vector3 decoPos = new Vector3(furniturePos.x - 2, furniturePos.y, furniturePos.z);
+                                Quaternion decoRot = Quaternion.Euler(0f, Random.Range(0.0f, 90.0f), 0f);
+                                Instantiate(decoPrefab[randomDeco], decoPos, decoRot, transform);
+                            }
                         }
                     }
                 }

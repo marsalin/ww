@@ -80,6 +80,7 @@ public class Player : MonoBehaviour
     public float spawnTimer;
     public GameObject butterflyPrefab;
     public bool spawnButterfly;
+    public bool inWardrobe;
 
     [Header("Sound")] public bool isPlayingWalkSound;
     public bool isPlayingSprintSound;
@@ -312,6 +313,14 @@ public class Player : MonoBehaviour
             endGame = true;
             Destroy(other.gameObject);
         }
+        else if (other.CompareTag("WardrobeCheck"))
+            inWardrobe = true;
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("WardrobeCheck"))
+            inWardrobe = false;
     }
     public Vector3 RandomNavMeshPosition(float radius)
     {
@@ -481,7 +490,7 @@ public class Player : MonoBehaviour
             isPlayingWalkSound = false;
             hasStopped = false;
         }
-        else if (!isSprinting && !isPlayingWalkSound && !holdingBreath)
+        else if (!isSprinting && !isPlayingWalkSound && !holdingBreath && exhaleSource == null)
         {
             BreathSound(breathWalk);
             isPlayingWalkSound = true;
@@ -512,7 +521,8 @@ public class Player : MonoBehaviour
     }
     public void StopBreathSound()
     {
-        breathingSource?.Stop();
+        if (breathingSource != null)
+            Destroy(breathingSource.gameObject);
     }
 
     public void GotHitSound()

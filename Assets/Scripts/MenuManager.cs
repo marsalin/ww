@@ -110,7 +110,6 @@ public class MenuManager : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = volume;
         PlayerPrefs.SetFloat("GameVolume", volume);
     }
