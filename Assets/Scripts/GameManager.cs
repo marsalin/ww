@@ -68,10 +68,16 @@ public class GameManager : MonoBehaviour
         jumpscareButton.interactable = true;
         jumpscareTimer = 2.5f;
     }
-    public void Animate()
+    IEnumerator Animate()
     {
         animator.SetTrigger("Animate");
+        yield return new WaitForSeconds(1.0f);
         AudioManagerScript.Instance.PlaySound2D(enemySound);
+    }
+
+    public void StartAnimation()
+    {
+        StartCoroutine(Animate());
     }
     
     public void StartGame()

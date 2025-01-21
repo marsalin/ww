@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     public AudioClip clickSound;
     public AudioClip deathscreenSound;
     public Player player;
+    public Slider volumeSlider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +23,13 @@ public class MenuManager : MonoBehaviour
         {
             escapeObject.SetActive(false);
             settings.SetActive(false);
+            float savedVolume = PlayerPrefs.GetFloat("GameVolume", 0.5f);
+            AudioListener.volume = savedVolume;
+            if (volumeSlider != null) 
+            {
+                volumeSlider.value = savedVolume;
+                volumeSlider.onValueChanged.AddListener(SetVolume);
+            }
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 3)
@@ -43,15 +51,6 @@ public class MenuManager : MonoBehaviour
                 Escape();
             }  
         }
-        if (player.endGame)
-            Finished();
-    }
-    public void Finished()
-    {
-        player.endGameObject.SetActive(true);
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        player.enabled = false;
     }
     
     public void Escape()

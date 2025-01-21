@@ -16,6 +16,7 @@ public class DollScript : MonoBehaviour
     }
     public void DollSound()
     {
-        AudioManagerScript.Instance.PlaySound3D(dollSound, transform.position);
+        float volume = 1.0f;
+        AudioManagerScript.Instance.PlaySound3D(dollSound, transform.position, volume);
     }
 }

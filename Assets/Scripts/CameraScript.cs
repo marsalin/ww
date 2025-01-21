@@ -4,7 +4,8 @@ using UnityEngine.Serialization;
 public class CameraScript : MonoBehaviour
 {
     public Transform cameraPos;
-    private Player player;
+    public Player player;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +14,12 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = cameraPos.position;
+        if (!player.endGame)
+            transform.position = cameraPos.position;
+        else
+        {
+            transform.rotation = Quaternion.Lerp(cameraPos.rotation, Quaternion.identity, Time.deltaTime * 10f);
+            transform.position += Vector3.forward * Time.deltaTime;
+        }
     }
 }

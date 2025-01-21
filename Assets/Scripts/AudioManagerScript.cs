@@ -16,7 +16,7 @@ public class AudioManagerScript : MonoBehaviour
         Instance = this;
     }
 
-    public void FootstepSound(AudioClip footstepClip, AudioClip footstepRugClip, GameObject dudeObject)
+    public void FootstepSound(AudioClip footstepClip, AudioClip footstepRugClip, GameObject dudeObject, float volume)
     {
         float sphereCastRadius = 0.8f;
         float sphereCastRange = 3.0f;
@@ -24,7 +24,7 @@ public class AudioManagerScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.SphereCast(sphereCastCenter, sphereCastRadius, -dudeObject.transform.up, out hit, sphereCastRange))
         {
-            PlaySound3D(hit.collider.CompareTag("Rug") ? footstepRugClip : footstepClip, hit.point);
+            PlaySound3D(hit.collider.CompareTag("Rug") ? footstepRugClip : footstepClip, hit.point, volume);
         }
     }
 

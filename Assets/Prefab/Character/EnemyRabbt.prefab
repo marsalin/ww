@@ -166,17 +166,21 @@ MonoBehaviour:
   endAnimation: 0
   playerFinished: 0
   goMiddleCell: 0
-  footstepWalk: {fileID: 8300000, guid: cb9aa4db4b3a12147bf2fe3d88fee270, type: 3}
-  footstepRugWalk: {fileID: 8300000, guid: 8e001351cd7065543a068386cde4c960, type: 3}
+  footstepWalk: {fileID: 8300000, guid: 8e0c586341010324fadd73453569f0aa, type: 3}
+  footstepRugWalk: {fileID: 8300000, guid: ccfb18eb53b37384b9632ae00f725881, type: 3}
   hitSound: {fileID: 8300000, guid: 40cda279da2faea43ad6582184440a70, type: 3}
   laughSound: {fileID: 8300000, guid: 5ab29fa4df278d148a1b3add1f66ebd2, type: 3}
   randomSounds:
   - {fileID: 8300000, guid: 57f5f9fc49e59cb4ca4ae0d069d09f33, type: 3}
   - {fileID: 8300000, guid: 727c90cef4c97c545a8860dda29b53b1, type: 3}
-  - {fileID: 8300000, guid: 539e54c3a324c7341a61c6edde66d718, type: 3}
-  - {fileID: 8300000, guid: 46cee7ba3d0514a49b52cc081ad6ca85, type: 3}
-  - {fileID: 8300000, guid: 0045f76525dcdd34dbf31cb4fa3563a5, type: 3}
+  - {fileID: 8300000, guid: af6edb08e1f686041a968120f681aff9, type: 3}
+  - {fileID: 8300000, guid: bbd4067866a8945fb9d465a7e89484ac, type: 3}
+  - {fileID: 8300000, guid: 043b695e69e5ca445b909d9e91979ff8, type: 3}
+  - {fileID: 8300000, guid: af9fad11421d51148b7885e4890ab5a2, type: 3}
+  - {fileID: 8300000, guid: bdeae38b321c46547a6e8b869ed7e6c7, type: 3}
+  - {fileID: 8300000, guid: 01e832c10da964346a6c7ab6338d590a, type: 3}
   soundTimer: 20
+  gotHitSound: {fileID: 8300000, guid: 64581012ea1fa934298a780545aaea73, type: 3}
 --- !u!195 &2379889545719145646
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -187,7 +191,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
+  m_Speed: 2.8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

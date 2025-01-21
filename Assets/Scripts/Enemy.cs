@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
     public AudioClip[] randomSounds;
     public float soundTimer;
     private AudioSource randomSource;
+    public AudioClip gotHitSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -91,8 +92,8 @@ public class Enemy : MonoBehaviour
         soundTimer -= Time.deltaTime;
         if (soundTimer <= 0)
         {
-            randomSource = AudioManagerScript.Instance.PlaySound3D(randomSounds[Random.Range(0, randomSounds.Length)], RandomNavMeshPosition(15));
-            soundTimer = 20.0f;
+            randomSource = AudioManagerScript.Instance.PlaySound3D(randomSounds[Random.Range(0, randomSounds.Length)], RandomNavMeshPosition(Random.Range(0, 15)));
+            soundTimer = 15.0f;
         }
     }
     public void FollowPlayer()
@@ -201,6 +202,8 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= hitRangeAnimation)
         {
             player.playerHealth--;
+            if (player.playerHealth != 0)
+                AudioManagerScript.Instance.PlaySound2D(gotHitSound);
             player.playerHealth = Mathf.Clamp(player.playerHealth, 0, 2);
             hitPlayer = true;
             player.spawnButterfly = true;
@@ -248,7 +251,8 @@ public class Enemy : MonoBehaviour
     }
     public void EnemyFootsteps(AnimationEvent animationevent)
     {
-        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject);
+        float volume = 1.0f;
+        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject, volume);
     }
 
     public void HitSound(AnimationEvent animationEvent)

@@ -8,6 +8,7 @@ public class OpenBook : MonoBehaviour, IInteractable
     public Vector3 openPosition;
     public Vector3 closePosition;
     public AudioClip openSound, closeSound;
+    public float speed = 4.0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +25,7 @@ public class OpenBook : MonoBehaviour, IInteractable
     
     public void Open()
     {
-        openable.transform.localRotation = Quaternion.Lerp(openable.transform.localRotation, Quaternion.Euler(isOpen ? openPosition : closePosition), Time.deltaTime * 5);
+        openable.transform.localRotation = Quaternion.Lerp(openable.transform.localRotation, Quaternion.Euler(isOpen ? openPosition : closePosition), Time.deltaTime * speed);
     }
     public void Sound()
     {

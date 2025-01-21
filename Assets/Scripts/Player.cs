@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
     public AudioSource breathingSource;
     public AudioSource exhaleSource;
     public AudioClip deathSound;
-    public AudioClip gotHitSound;
+    
     
     [Header("End")] public bool endGame;
     public GameObject endGameObject;
@@ -317,7 +317,8 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             endGameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
-            canMove = false;
+            mainCamera.transform.parent = null;
+            enabled = false;
         }
         else if (other.CompareTag("WardrobeCheck"))
             inWardrobe = true;
@@ -420,6 +421,7 @@ public class Player : MonoBehaviour
         else if (playerHealth == 0)
         {
             mainCamera.transform.SetParent(mainCamera.GetComponent<CameraScript>().cameraPos); 
+            AudioManagerScript.Instance.PlaySound2D(deathSound);
             isDead = true;
             canMove = false;
             deathVignette.SetActive(true);
@@ -530,22 +532,15 @@ public class Player : MonoBehaviour
         if (breathingSource != null)
             Destroy(breathingSource.gameObject);
     }
-
-    public void GotHitSound()
-    {
-        AudioManagerScript.Instance.PlaySound2D(gotHitSound);
-    }
-    public void DeathSound()
-    {
-        AudioManagerScript.Instance.PlaySound2D(deathSound);
-    }
     public void WalkingFootsteps(AnimationEvent animationevent)
     {
-        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject);
+        float volume = 1.0f;
+        AudioManagerScript.Instance.FootstepSound(footstepWalk, footstepRugWalk, gameObject, volume);
     }
 
     public void SprintingFootsteps(AnimationEvent animationevent)
     {
-        AudioManagerScript.Instance.FootstepSound(footstepSprint, footstepRugSprint, gameObject);
+        float volume = 1.0f;
+        AudioManagerScript.Instance.FootstepSound(footstepSprint, footstepRugSprint, gameObject, volume);
     }
 }

@@ -578,7 +578,7 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
         loadingText = "Setting player position...";
         LoadingScreen.Instance.SetPercentage(percentage, loadingText);
         float volume = 0.5f;
-        AudioManagerScript.Instance.PlaySound2D(gameMusic, volume);
+        AudioManagerScript.Instance.PlaySound2D(gameMusic, volume, loop: true);
         yield return null;
     }
    

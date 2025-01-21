@@ -12337,8 +12337,8 @@ Transform:
   m_GameObject: {fileID: 1793653329973385123}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3895328, y: 1.886675, z: -2.522}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.3895, y: 1.8864, z: -2.5242}
+  m_LocalScale: {x: 1, y: 0.794, z: 0.9907}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7952466952527782277}
@@ -29122,6 +29122,7 @@ MonoBehaviour:
   closePosition: {x: 0, y: 90, z: 0}
   openSound: {fileID: 8300000, guid: d0870c964a2354d8094ce31e769a7290, type: 3}
   closeSound: {fileID: 8300000, guid: 04213f14ae5074a84b3c41aef6b6a00f, type: 3}
+  speed: 3.5
 --- !u!65 &7408729165828024248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31252,8 +31253,8 @@ Transform:
   m_GameObject: {fileID: 6558982211665261102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04660325, y: 1.892071, z: -2.542}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0466, y: 1.892071, z: -2.5427}
+  m_LocalScale: {x: 1, y: 0.7129, z: 1.0031}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7952466952527782277}
@@ -33905,6 +33906,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3838523655459513141}
     m_Modifications:
+    - target: {fileID: 2995117949298136189, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995117949298136189, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995117949298136189, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995117949298136189, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995117949298136189, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7022209968181172683, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -33980,6 +34001,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4317129638587560273}
   m_SourcePrefab: {fileID: 100100000, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+--- !u!1 &2508035812140559616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2511631227987922631, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
+  m_PrefabInstance: {fileID: 5996749779313607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7018482619939715596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7022209968181172683, guid: 1e1a6e53c2ffd4c8c963f564019e6eca, type: 3}
@@ -34005,6 +34031,10 @@ MonoBehaviour:
   lightOn: 0
   lightSoundOn: {fileID: 8300000, guid: 8e331c284361f4542844807a77e2831c, type: 3}
   lightSoundOff: {fileID: 8300000, guid: e3a5f5c37f37322489fe1140bd6f39e9, type: 3}
+  onPosition: {x: 8, y: 0, z: 0}
+  offPosition: {x: -8, y: 0, z: 0}
+  lightSwitchObject: {fileID: 2508035812140559616}
+  speed: 4
 --- !u!65 &4317129638587560273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34770,7 +34800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4624506539347312, guid: 757cd605fbdcdce42b6f1b8fce64e500, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.469
+      value: 3.383
       objectReference: {fileID: 0}
     - target: {fileID: 4624506539347312, guid: 757cd605fbdcdce42b6f1b8fce64e500, type: 3}
       propertyPath: m_LocalPosition.y
@@ -35201,6 +35231,7 @@ MonoBehaviour:
   closePosition: {x: 90, y: 0, z: 0}
   openSound: {fileID: 8300000, guid: fa9ed006ad36e2c49bb5dca33b012bfc, type: 3}
   closeSound: {fileID: 8300000, guid: 709323fca682e4142ad4499347810019, type: 3}
+  speed: 4
 --- !u!65 &5892756059830290526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37359,6 +37390,7 @@ MonoBehaviour:
   closePosition: {x: 0, y: 0, z: 0}
   openSound: {fileID: 8300000, guid: 03da765eb3e3c8744b21fd216ec68801, type: 3}
   closeSound: {fileID: 8300000, guid: 03da765eb3e3c8744b21fd216ec68801, type: 3}
+  speed: 4
 --- !u!65 &3766132988246360788
 BoxCollider:
   m_ObjectHideFlags: 0
