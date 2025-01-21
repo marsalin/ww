@@ -218,7 +218,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.05
+  m_fontSize: 56.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.1
+  m_fontSize: 39.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2284,6 +2284,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408904780}
   m_CullTransparentMesh: 1
+--- !u!1001 &1430817612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1260501652137496, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_Name
+      value: Rug1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 168.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -466.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7049915
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70921576
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068732887779152, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba577e1642715534585fb21ba6d0529a, type: 3}
 --- !u!1001 &1581946230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3336,13 +3397,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2065003594}
     m_Modifications:
+    - target: {fileID: 2938333267246662064, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.52107364
+      objectReference: {fileID: 0}
     - target: {fileID: 3005173809449195057, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
       propertyPath: m_Name
       value: EscapeMenue
       objectReference: {fileID: 0}
+    - target: {fileID: 4711549815125413823, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.39629352
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711549815125413823, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711549815125413823, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.27590343
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711549815125413823, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.3493077
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958814359840038653, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4958814359840038653, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
       propertyPath: m_Color.a
-      value: 0.25490198
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5046499155638862609, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3376,9 +3461,29 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7737098507403145316, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.7258564
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737098507403145316, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737098507403145316, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737098507403145316, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.3493077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981870031875112488, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
+      propertyPath: m_text
+      value: Quit game?
+      objectReference: {fileID: 0}
     - target: {fileID: 7981870031875112488, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
       propertyPath: m_fontSize
-      value: 54.05
+      value: 54.1
       objectReference: {fileID: 0}
     - target: {fileID: 8124697243757381526, guid: e5713e0dfae589945a0b12cc03f5ec45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4152,3 +4257,4 @@ SceneRoots:
   - {fileID: 1326126555}
   - {fileID: 613288223}
   - {fileID: 2008024892}
+  - {fileID: 1430817612}

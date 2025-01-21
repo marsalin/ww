@@ -10,7 +10,7 @@ public class AudioManagerScript : MonoBehaviour
     public GameObject jumpscarePrefab;
     public bool hearingSomething;
     public static AudioManagerScript Instance;
-   
+    private static bool hasJumpscare;
     void Awake()
     {
         Instance = this;
@@ -66,14 +66,19 @@ public class AudioManagerScript : MonoBehaviour
         yield return new WaitForSeconds(8.0f);
         hearingSomething = false;
     }
-    private void SpawnJumpScare()
+    private IEnumerator SpawnJumpScare()
     {
         Instantiate(jumpscarePrefab);
+        yield return new WaitForSeconds(1.0f);
+        hasJumpscare = true;
+        Application.Quit();
     }
     static bool canQuit()
     {
-        Instance.SpawnJumpScare();
-        return false;
+        if (hasJumpscare)
+            return true;
+        Instance.StartCoroutine(Instance.SpawnJumpScare());
+        return hasJumpscare;
     }
     [RuntimeInitializeOnLoadMethod]
     static void RunOnStart()

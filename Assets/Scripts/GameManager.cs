@@ -166,11 +166,12 @@ public class GameManager : MonoBehaviour
 
     public void Escape()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && menue.activeSelf && !escapeMenu.activeSelf)
-            escapeMenu.SetActive(true);
-        else if (Input.GetKeyDown(KeyCode.Escape) && (settings.activeSelf || escapeMenu.activeSelf))
+        if (Input.GetButtonDown("Escape"))
         {
-            Default();
+            if (menue.activeSelf && !escapeMenu.activeSelf)
+                escapeMenu.SetActive(true);
+            else if ((settings.activeSelf || escapeMenu.activeSelf))
+                Default();
         }
     }
     

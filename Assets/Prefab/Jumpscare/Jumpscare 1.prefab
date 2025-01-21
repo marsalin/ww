@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpscareSound: {fileID: 8300000, guid: 92f6a4118603da1488d85ef220327bd1, type: 3}
-  timer: 1.2
+  timer: 1
 --- !u!1001 &3990553520143700889
 PrefabInstance:
   m_ObjectHideFlags: 0
