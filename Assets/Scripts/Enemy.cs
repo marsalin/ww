@@ -138,7 +138,7 @@ public class Enemy : MonoBehaviour
 
     public bool FindPlayer() 
     {
-        PlayerInWardrobe();
+        hitRangeAnimation = 3.5f;
         if (Vector3.Distance(transform.position, player.transform.position) <= viewRange)
         {
             Vector3 playerDirection = (player.transform.position - transform.position).normalized;
@@ -159,14 +159,7 @@ public class Enemy : MonoBehaviour
         hitPlayerAnimation = false;
         return false;
     }
-
-    public void PlayerInWardrobe()
-    {
-        if (player.inWardrobe)
-            hitRangeAnimation = 3.5f;
-        else
-            hitRangeAnimation = 2.5f;
-    }
+    
     public void Difficulty()
     {
         if (GameManagerInstance.Instance.level == "easy")
