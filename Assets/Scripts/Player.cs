@@ -100,20 +100,20 @@ public class Player : MonoBehaviour
     [Header("End")] public bool endGame;
     public GameObject endGameObject;
     private MenuManager menuManager;
+    public bool finished;
 
     void Awake()
     {
         endGameObject.SetActive(false);
+        pressEText.enabled = false;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        canMove = false;
         Cursor.lockState = CursorLockMode.Locked;
         characterController = GetComponent<CharacterController>();
         maze = FindFirstObjectByType<Maze>();
         playerHealth = 2;
-        pressEText.enabled = false;
         vignette.SetActive(false);
         deathVignette.SetActive(false);
         BreathSound(breathWalk);
@@ -123,8 +123,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
-        if (canMove)
+        if (!finished)
+            PlayerMovement();
+        if (canMove && !finished && Time.deltaTime > 0.0f)
             MouseLook();
         CheckRotation();
         Lantern();
@@ -133,8 +134,11 @@ public class Player : MonoBehaviour
         PlayerHealth();
         PlaySound();
         Coffee();
-        if (Input.GetButtonDown("Restart"))
+#if UNITY_EDITOR
+        if(Input.GetButtonDown("Restart"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+#endif
+
     }
 
     private void LateUpdate()
@@ -313,7 +317,11 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag("End"))
         {
+            if (maze.audioSource != null)
+                Destroy(maze.audioSource);
+            AudioManagerScript.Instance.PlaySound2D(deathSound, volume: 0.1f, loop: true);
             endGame = true;
+            finished = true;
             Destroy(other.gameObject);
             endGameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
@@ -356,7 +364,14 @@ public class Player : MonoBehaviour
 
             if (enemyspawnTimer <= 0)
             {
-                Instantiate(enemyPrefab, RandomNavMeshPosition(Random.Range(GameManagerInstance.Instance.minRange, GameManagerInstance.Instance.maxRange)), Quaternion.identity);
+                Vector3 randomSpawnPos;
+                do
+                {
+                    randomSpawnPos = RandomNavMeshPosition(Random.Range(GameManagerInstance.Instance.minRange,
+                        GameManagerInstance.Instance.maxRange));
+                } while (Vector3.Distance(randomSpawnPos, transform.position) < GameManagerInstance.Instance.minRange);
+              
+                Instantiate(enemyPrefab, randomSpawnPos, Quaternion.identity);
                 spawn = false;
             }
         }
@@ -421,7 +436,6 @@ public class Player : MonoBehaviour
         else if (playerHealth == 0)
         {
             mainCamera.transform.SetParent(mainCamera.GetComponent<CameraScript>().cameraPos); 
-            AudioManagerScript.Instance.PlaySound2D(deathSound);
             isDead = true;
             canMove = false;
             deathVignette.SetActive(true);
@@ -435,18 +449,26 @@ public class Player : MonoBehaviour
         }
     }
 
+    public IEnumerator BlockMovementSeconds(float seconds)
+    {
+        if (canMove)
+        {
+            canMove = false;
+            yield return new WaitForSeconds(seconds);
+            canMove = true;
+        }
+    }
+
     public void Coffee()
     {
         coffeeDrinkTimer -= Time.deltaTime;
         if (coffeeDrinkTimer >= 0)
         {
             coffeeDrinking = true;
-            canMove = false;
         }
         else
         {
             coffeeDrinking = false;
-            canMove = true;
             if (coffeeGameObject != null)
                 Destroy(coffeeGameObject);
         }
@@ -488,7 +510,6 @@ public class Player : MonoBehaviour
             }
         }
     }
-
     public void PlaySound()
     {
         if (isSprinting && !isPlayingSprintSound)

@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
     public float soundTimer;
     private AudioSource randomSource;
     public AudioClip gotHitSound;
+    private OpenDoor openDoor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +48,11 @@ public class Enemy : MonoBehaviour
         hitPlayerAnimation = false;
         isTargetable = true;
         Difficulty();
+        if (GameManagerInstance.Instance.level == "easy")
+            agent.speed = 2.4f;
+        else
+            agent.speed = 2.8f;
+        
     }
 
     // Update is called once per frame
@@ -92,24 +98,15 @@ public class Enemy : MonoBehaviour
         soundTimer -= Time.deltaTime;
         if (soundTimer <= 0)
         {
-            randomSource = AudioManagerScript.Instance.PlaySound3D(randomSounds[Random.Range(0, randomSounds.Length)], RandomNavMeshPosition(Random.Range(0, 15)));
-            soundTimer = 15.0f;
+            randomSource = AudioManagerScript.Instance.PlaySound3D(randomSounds[Random.Range(0, randomSounds.Length)], RandomNavMeshPosition(Random.Range(0, 18)), pitch: Random.Range(0.8f, 1.2f));
+            randomSource.gameObject.AddComponent<AudioLowPassFilter>().cutoffFrequency = 8500.0f;
+            soundTimer = 20.0f;
         }
     }
     public void FollowPlayer()
     {
-        if ((playerFound || AudioManagerScript.Instance.hearingSomething) && !playerFinished)
-        {
-            Vector3 snappedPos;
-            if (SnapPosition(player.transform.position, snapDistance, out snappedPos))
-            {
-                lastPlayerPos = snappedPos;
-            }
-            agent.destination = player.transform.position;
-            timer = 1f;
-        }
-        else if ((!playerFound && !playerFinished) && (player.exhaleSource != null ||
-                                  player.breathingSource != null) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange)
+        if (((playerFound || AudioManagerScript.Instance.hearingSomething) && !playerFinished) || ((!playerFound && !playerFinished) && (player.exhaleSource != null ||
+                player.breathingSource != null) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange))
         {
             Vector3 snappedPos;
             if (SnapPosition(player.transform.position, snapDistance, out snappedPos))
@@ -149,7 +146,7 @@ public class Enemy : MonoBehaviour
             if (Physics.Raycast(transform.position + transform.up, playerDirection, out hit, viewRange, playerLayer))
             {
                 Debug.DrawRay(transform.position + transform.up, playerDirection * hit.distance, Color.yellow);
-                if (hit.collider.gameObject.GetComponent<Player>() != null || (player.inWardrobe))
+                if (hit.collider.gameObject.GetComponent<Player>())
                 {
                     Quaternion targetRotation = Quaternion.LookRotation(playerDirection, Vector3.up);
                     transform.rotation = targetRotation;
@@ -166,7 +163,7 @@ public class Enemy : MonoBehaviour
     public void PlayerInWardrobe()
     {
         if (player.inWardrobe)
-            hitRangeAnimation = 3.0f;
+            hitRangeAnimation = 3.5f;
         else
             hitRangeAnimation = 2.5f;
     }

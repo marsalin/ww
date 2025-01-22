@@ -41,7 +41,7 @@ public class Butterfly : MonoBehaviour
 
     public void ButterflyStart()
     {
-        agent.destination = new Vector3( maze.exitCellWorldPosRoom.x, maze.exitCellWorldPosRoom.y, transform.position.z - 8);
+        agent.destination = new Vector3( maze.exitCellWorldPosRoom.x, maze.exitCellWorldPosRoom.y, maze.exitCellWorldPosRoom.z - 8);
         trailRenderer.endWidth = 0.1f;
     }
     

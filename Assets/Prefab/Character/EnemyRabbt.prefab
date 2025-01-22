@@ -157,7 +157,7 @@ MonoBehaviour:
   hitPlayerAnimation: 0
   hitRangeAnimation: 2.5
   hitPlayer: 0
-  timer: 1
+  timer: 0.5
   lastPlayerPos: {x: 0, y: 0, z: 0}
   snapDistance: 5
   minDistance: 25
@@ -195,7 +195,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

@@ -69,7 +69,7 @@ public class AudioManagerScript : MonoBehaviour
     private IEnumerator SpawnJumpScare()
     {
         Instantiate(jumpscarePrefab);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSecondsRealtime(1.0f);
         hasJumpscare = true;
         Application.Quit();
     }

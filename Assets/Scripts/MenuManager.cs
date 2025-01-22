@@ -60,7 +60,6 @@ public class MenuManager : MonoBehaviour
             escapeObject.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
-            player.enabled = false;
         }
         else
         {

@@ -986,13 +986,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065149376734539798}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7020848, y: -0.08412482, z: -0.08412482, w: 0.7020848}
   m_LocalPosition: {x: -0.42300034, y: 3.089, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6252474195263087961}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 76.335, y: -90, z: -90}
 --- !u!108 &1921108426889448364
 Light:
   m_ObjectHideFlags: 0
@@ -1004,13 +1004,13 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 0.9658456, b: 0.8915094, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 30
   m_Range: 8
   m_SpotAngle: 70
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2434,13 +2434,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120717924774085974}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.70537794, y: -0.04941669, z: -0.04941669, w: 0.70537794}
   m_LocalPosition: {x: -0.42300034, y: 3.089, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6862561943508528144}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 81.985, y: -90, z: -90}
 --- !u!108 &8980725356149802198
 Light:
   m_ObjectHideFlags: 0
@@ -2452,13 +2452,13 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 0.9658456, b: 0.8915094, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 30
   m_Range: 8
   m_SpotAngle: 70
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3572,13 +3572,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2890918905211017693}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7047357, y: -0.057858802, z: -0.057858802, w: 0.7047357}
   m_LocalPosition: {x: -0.42300034, y: 3.089, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2270857587141518931}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80.613, y: -90, z: -90}
 --- !u!108 &6143911564625607360
 Light:
   m_ObjectHideFlags: 0
@@ -3590,13 +3590,13 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 0.9658456, b: 0.8915094, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 30
   m_Range: 8
   m_SpotAngle: 70
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -7297,13 +7297,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6694544897848848760}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.70581037, y: -0.042799335, z: -0.042799335, w: 0.70581037}
   m_LocalPosition: {x: -0.42300034, y: 3.089, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3061644056239933318}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 83.06, y: -90, z: -90}
 --- !u!108 &5036503921077591188
 Light:
   m_ObjectHideFlags: 0
@@ -7315,13 +7315,13 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 0.9658456, b: 0.8915094, a: 1}
-  m_Intensity: 2.5
+  m_Intensity: 30
   m_Range: 8
   m_SpotAngle: 70
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -9580,6 +9580,7 @@ MonoBehaviour:
   closePosition: {x: 0, y: 90, z: 0}
   openSound: {fileID: 8300000, guid: d0870c964a2354d8094ce31e769a7290, type: 3}
   closeSound: {fileID: 8300000, guid: 04213f14ae5074a84b3c41aef6b6a00f, type: 3}
+  speed: 4
 --- !u!1 &8940105844888058910
 GameObject:
   m_ObjectHideFlags: 0

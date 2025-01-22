@@ -49,6 +49,7 @@ public class Maze : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip gameMusic;
+    public AudioSource audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -578,8 +579,10 @@ IEnumerator NavMeshOutOfDateCoroutine(Vector3 playerPosition, float navigationMe
         loadingText = "Setting player position...";
         LoadingScreen.Instance.SetPercentage(percentage, loadingText);
         float volume = 0.5f;
-        AudioManagerScript.Instance.PlaySound2D(gameMusic, volume, loop: true);
-        yield return null;
+        audioSource = AudioManagerScript.Instance.PlaySound2D(gameMusic, volume, loop: true);
+        yield return new WaitForFixedUpdate();
+        yield return new WaitForFixedUpdate();
+        player.GetComponent<Player>().canMove = true;
     }
    
     public void RemoveWalls(Cell currentCell, Cell nextCell)
