@@ -49,9 +49,9 @@ public class Enemy : MonoBehaviour
         isTargetable = true;
         Difficulty();
         if (GameManagerInstance.Instance.level == "easy")
-            agent.speed = 2.4f;
+            agent.speed = 2.5f;
         else
-            agent.speed = 2.8f;
+            agent.speed = 3.0f;
         
     }
 
@@ -105,6 +105,11 @@ public class Enemy : MonoBehaviour
     }
     public void FollowPlayer()
     {
+        if (player.inWardrobe)
+            hitRangeAnimation = 3.5f;
+        else
+            hitRangeAnimation = 2.5f;
+        
         if (((playerFound || AudioManagerScript.Instance.hearingSomething) && !playerFinished) || ((!playerFound && !playerFinished) && (player.exhaleSource != null ||
                 player.breathingSource != null) && Vector3.Distance(transform.position, player.transform.position) <= hearingRange))
         {
@@ -138,20 +143,18 @@ public class Enemy : MonoBehaviour
 
     public bool FindPlayer() 
     {
-        hitRangeAnimation = 3.5f;
         if (Vector3.Distance(transform.position, player.transform.position) <= viewRange)
         {
-            Vector3 playerDirection = (player.transform.position - transform.position).normalized;
+            Vector3 playerDirection = ((player.transform.position + transform.up) - (transform.position + transform.up * 2.25f)).normalized;
             RaycastHit hit;
-            if (Physics.Raycast(transform.position + transform.up, playerDirection, out hit, viewRange, playerLayer))
+            if (Physics.Raycast(transform.position + transform.up * 2.25f, playerDirection, out hit, viewRange, playerLayer))
             {
-                Debug.DrawRay(transform.position + transform.up, playerDirection * hit.distance, Color.yellow);
+                Debug.DrawRay(transform.position + transform.up * 2.25f, playerDirection * hit.distance, Color.yellow);
                 if (hit.collider.gameObject.GetComponent<Player>())
                 {
-                    Quaternion targetRotation = Quaternion.LookRotation(playerDirection, Vector3.up);
+                    Quaternion targetRotation = Quaternion.LookRotation(playerDirection.IgnoreY(), Vector3.up);
                     transform.rotation = targetRotation;
-                    if (Vector3.Distance(transform.position, player.transform.position) <= hitRangeAnimation)
-                        hitPlayerAnimation = true;
+                    hitPlayerAnimation = Vector3.Distance(transform.position, player.transform.position) <= hitRangeAnimation;
                     return true;
                 }
             }

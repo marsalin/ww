@@ -3,49 +3,47 @@ using UnityEngine.Serialization;
 
 public class RadioScript : MonoBehaviour, IInteractable
 {
-    public AudioSource musicSource;
+    public AudioSource source;
     [FormerlySerializedAs("radioClip")] public AudioClip soundClip;
     public bool isOn;
     public GameObject tvGlass;
+    public Light tvLight;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject musicObj = new GameObject("RadioMusic");
-        musicSource = musicObj.AddComponent<AudioSource>();
-        musicSource.clip = soundClip;
-        if (gameObject.CompareTag("TV")) 
+        if (gameObject.CompareTag("TV"))
+        {
+            tvLight.enabled = false;
             tvGlass.SetActive(false);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        RadioMusic();
-    }
-
     public void RadioMusic()
     {
         if (isOn)
         {
-            musicSource.Play();
+            source = AudioManagerScript.Instance.PlaySound3D(soundClip, transform.position, volume: 1.0f, loop: true);
             if (gameObject.CompareTag("TV"))
             {
+                tvLight.enabled = true;
                 tvGlass.SetActive(true);
             }
         }
         else
         {
-            musicSource.Stop();
-            if (gameObject.CompareTag("TV"))
-            {
-                tvGlass.SetActive(false);
-            }
+           if (source != null)
+               Destroy(source);
+           if (gameObject.CompareTag("TV"))
+           {
+               tvLight.enabled = false;
+               tvGlass.SetActive(false);
+           }
         }
     }
 
     public void Interact()
     {
         isOn = !isOn;
+        RadioMusic();
     }
 }

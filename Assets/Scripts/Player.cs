@@ -418,6 +418,7 @@ public class Player : MonoBehaviour
 
             if (Input.GetButtonDown("Interact") && !holdingBreath)
             {
+                StartCoroutine(AudioManagerScript.Instance.HearingSomething());
                 IInteractable interactable = hit.collider.gameObject.GetComponent<IInteractable>();
                 interactable?.Interact();
             }

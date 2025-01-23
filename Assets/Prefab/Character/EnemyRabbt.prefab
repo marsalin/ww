@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   maze: {fileID: 0}
-  agent: {fileID: 0}
+  agent: {fileID: 2379889545719145646}
   middleCellPos: {x: 0, y: 0, z: 0}
   enemyAnimator: {fileID: 5067178891452050487}
   viewRange: 30

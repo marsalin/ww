@@ -4057,9 +4057,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_HighlightedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_PressedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_SelectedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
+    m_HighlightedColor: {r: 0.745283, g: 0.70661265, b: 0.70661265, a: 1}
+    m_PressedColor: {r: 0.8584906, g: 0.77345145, b: 0.77345145, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.7725491, b: 0.7725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4113,9 +4113,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_HighlightedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_PressedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
-    m_SelectedColor: {r: 0.5686275, g: 0.5294118, b: 0.5294118, a: 1}
+    m_HighlightedColor: {r: 0.74509805, g: 0.7058824, b: 0.7058824, a: 1}
+    m_PressedColor: {r: 0.85882354, g: 0.77254903, b: 0.77254903, a: 1}
+    m_SelectedColor: {r: 0.8588236, g: 0.7725491, b: 0.7725491, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4314,8 +4314,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4031368411386660282, guid: 25af884c2ce5d1046bff64ea1c353c04, type: 3}
+      propertyPath: m_text
+      value: A sprawling maze so big, even the enemy might need a map.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031368411386660282, guid: 25af884c2ce5d1046bff64ea1c353c04, type: 3}
       propertyPath: m_fontSize
-      value: 34.7
+      value: 33.85
       objectReference: {fileID: 0}
     - target: {fileID: 4031368411386660282, guid: 25af884c2ce5d1046bff64ea1c353c04, type: 3}
       propertyPath: m_fontAsset

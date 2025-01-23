@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
     public void PlayHard()
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
-        GameManagerInstance.Instance.size = 20;
+        GameManagerInstance.Instance.size = 18;
         GameManagerInstance.Instance.level = "hard";
         GameManagerInstance.Instance.minRange = 20.0f;
         GameManagerInstance.Instance.maxRange = 40.0f;
@@ -162,12 +162,14 @@ public class GameManager : MonoBehaviour
         AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 1.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
+        volumeSlider.value = 1.0f;
     }
 
     public void SetMinVolume(float volume)
     {
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
+        volumeSlider.value = 0.0f;
     }
 
     public void Escape()

@@ -61,7 +61,6 @@ public class OpenDoor : MonoBehaviour, IInteractable
     public void Interact()
     {
         DoorSound();
-        StartCoroutine(AudioManagerScript.Instance.HearingSomething());
         isOpen = !isOpen;
         if (gameObject.CompareTag("WardrobeDoll"))
         {

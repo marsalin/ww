@@ -18,6 +18,7 @@ public class CoffeeScript : MonoBehaviour, IInteractable
         player.drinkCoffee = !player.drinkCoffee;
         player.coffeeDrinkTimer = 2.0f;
         player.coffeeMoveTimer = 0.4f;
+        GetComponent<Collider>().enabled = false;
         AudioManagerScript.Instance.PlaySound2D(drinkSound);
         player.StartCoroutine(player.BlockMovementSeconds(1.5f));
     }

@@ -525,11 +525,13 @@ MonoBehaviour:
   - {fileID: 6389427040344309791, guid: 611f61705733085478cdbe9d0591f9f8, type: 3}
   - {fileID: 4603375147729956551, guid: cd422f68ccfae3544a7a6846e200242e, type: 3}
   - {fileID: 4373207712228112017, guid: 8478667bc63216047af1d2960c85f3a9, type: 3}
+  - {fileID: 1833650608860612455, guid: 3e687085d563fad42859114f8f0f5fdf, type: 3}
   exitCellWorldPosRoom: {x: 0, y: 0, z: 0}
   entranceCellPos: {x: 0, y: 0}
   exitCellPos: {x: 0, y: 0}
   mazeMiddleCellPos: {x: 0, y: 0}
   gameMusic: {fileID: 8300000, guid: e93683c9c0a995d48b3f20927db0ac5a, type: 3}
+  audioSource: {fileID: 0}
 --- !u!4 &949316945
 Transform:
   m_ObjectHideFlags: 0

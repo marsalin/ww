@@ -98,12 +98,14 @@ public class MenuManager : MonoBehaviour
     {
         AudioListener.volume = 0.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
+        volumeSlider.value = 0.0f;
     }
     public void SetMaxVolume(float volume)
     {
         AudioManagerScript.Instance.PlaySound2D(clickSound);
         AudioListener.volume = 1.0f;
         PlayerPrefs.SetFloat("GameVolume", volume);
+        volumeSlider.value = 1.0f;
     }
 
     public void SetVolume(float volume)
