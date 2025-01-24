@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public AudioClip menuMusic;
     public AudioClip enemySound;
     public Animator animator;
+    public RuntimePlatform platformToDisableOn;
     
     [Header("Jumpscare")]
     [FormerlySerializedAs("jumpScareObject")] public GameObject jumpScarePrefab;
@@ -176,7 +177,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Escape"))
         {
-            if (menue.activeSelf && !escapeMenu.activeSelf)
+            if (menue.activeSelf && !escapeMenu.activeSelf && Application.platform != platformToDisableOn)
                 escapeMenu.SetActive(true);
             else if ((settings.activeSelf || escapeMenu.activeSelf))
                 Default();

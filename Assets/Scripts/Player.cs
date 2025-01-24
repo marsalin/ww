@@ -324,6 +324,7 @@ public class Player : MonoBehaviour
             finished = true;
             Destroy(other.gameObject);
             endGameObject.SetActive(true);
+            staminaSlider.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             mainCamera.transform.parent = null;
             enabled = false;

@@ -339,7 +339,7 @@ public class Maze : MonoBehaviour
                         int randomWallLamp = Random.Range(0, wallLampPrefab.Length - 1);
                         Vector3 wallPos = cellPos + (-Vector3.forward * prefabWidth / 2f);
                         Quaternion rotation = Quaternion.Euler(0f, 90f, 0f);
-                        int wallIndex = Random.Range(0, 10) == 0 && j != 0 ? 3 : (randomWallLamp);
+                        int wallIndex = Random.Range(0, 10) == 0 && i != 0 ? 3 : (randomWallLamp);
                         Instantiate(wallLampPrefab[wallIndex], wallPos, rotation, transform);
                         int random = Random.Range(0, 2);
                         if (random == 0 && wallIndex != 3)

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: ca146b11156846e4ea6a3d0995cd5a68, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.4
+  m_fontSize: 56.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1443,6 +1443,7 @@ MonoBehaviour:
   menuMusic: {fileID: 8300000, guid: 93abc65fb0a7d9a47bb2f33a425869bb, type: 3}
   enemySound: {fileID: 8300000, guid: 1cd4e67978b184b4396c4c9aa594bb39, type: 3}
   animator: {fileID: 93460383}
+  platformToDisableOn: 17
   jumpScarePrefab: {fileID: 6857344396585271259, guid: 5a5c42b625417a649ab2c99c81adda3d, type: 3}
   jumpscareText: {fileID: 788423769}
   jumpscareButton: {fileID: 2083434961}
@@ -2570,6 +2571,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5333465077453892347, guid: 25af884c2ce5d1046bff64ea1c353c04, type: 3}
   m_PrefabInstance: {fileID: 4866574708865393589}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1689389552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2648253402764453162, guid: b250a26ee7b1ee740add091ccef7caa2, type: 3}
+  m_PrefabInstance: {fileID: 1257509145252890226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1689389557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689389552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c27d266315d6f84eba7202291a84a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformToDisableOn: 17
 --- !u!1001 &1826036558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3456,7 +3475,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2648253402764453162, guid: b250a26ee7b1ee740add091ccef7caa2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689389557}
   m_SourcePrefab: {fileID: 100100000, guid: b250a26ee7b1ee740add091ccef7caa2, type: 3}
 --- !u!1 &1651137010193314221
 GameObject:
@@ -3594,10 +3616,10 @@ RectTransform:
   - {fileID: 6071313609203032841}
   m_Father: {fileID: 3987010898441456381}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.58641624}
-  m_AnchoredPosition: {x: 3, y: 275}
-  m_SizeDelta: {x: -1162, y: -550}
+  m_AnchorMin: {x: 0.298, y: 0.50871027}
+  m_AnchorMax: {x: 0.69893897, y: 0.58641624}
+  m_AnchoredPosition: {x: 6.5, y: 1}
+  m_SizeDelta: {x: -11, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2964450552215391100
 CanvasRenderer:

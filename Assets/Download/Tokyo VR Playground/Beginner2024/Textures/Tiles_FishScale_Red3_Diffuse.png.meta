@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: f213d874a606c462ca91f3cece8c5d26
+AssetOrigin:
+  serializedVersion: 1
+  productId: 291269
+  packageName: Sample assets for a super introductory book published in Japan
+  packageVersion: 1.0.0
+  assetPath: Assets/Tokyo VR Playground/Beginner2024/Textures/Tiles_FishScale_Red3_Diffuse.png
+  uploadId: 698307
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +76,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -82,6 +89,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -115,10 +135,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 291269
-  packageName: Sample assets for a super introductory book published in Japan
-  packageVersion: 1.0.0
-  assetPath: Assets/Tokyo VR Playground/Beginner2024/Textures/Tiles_FishScale_Red3_Diffuse.png
-  uploadId: 698307
